@@ -1,32 +1,23 @@
-#!/usr/bin/env python3
-
 from isaacsim import SimulationApp
 
-# ------------------------------------------------------------
-# Start Isaac Sim FIRST
-# ------------------------------------------------------------
+# ============================================================
+# Start Isaac Sim
+# ============================================================
 
 simulation_app = SimulationApp({
     "headless": True
 })
 
-# ------------------------------------------------------------
-# Imports after SimulationApp
-# ------------------------------------------------------------
+# ============================================================
+# Imports AFTER SimulationApp
+# ============================================================
 
-import math
-import time
+import omni.graph.core as og
+import omni.usd
+import omni.kit.app
+import omni.timeline
 
-import numpy as np
-
-from pxr import Usd, UsdGeom
-
-import rclpy
-from rclpy.node import Node
-
-from nav_msgs.msg import Odometry
-from geometry_msgs.msg import TransformStamped
-from tf2_ros import TransformBroadcaster
+from pxr import Sdf
 
 
 # ============================================================
@@ -35,311 +26,447 @@ from tf2_ros import TransformBroadcaster
 
 USD_PATH = (
     "/home/ubuntu/isaac_assets/test_forklift/"
-    "forklift_c_camera.usd"
+    "forklift_c_center_stereo_clean.usd"
 )
 
 ROBOT_PRIM = "/World/forklift_c"
 
+GRAPH_PATH = (
+    "/World/forklift_c/ground_truth_ros"
+)
+
 ODOM_TOPIC = "/odom"
+TF_TOPIC = "/tf"
+CLOCK_TOPIC = "/clock"
 
 ODOM_FRAME = "odom"
 BASE_FRAME = "base_link"
-
-PUBLISH_HZ = 50.0
-
-
-# ============================================================
-# Quaternion utilities
-# ============================================================
-
-def quat_wxyz_to_yaw(q):
-    """
-    Isaac Sim / USD quaternion convention:
-
-        [w, x, y, z]
-
-    Returns yaw around Z.
-    """
-
-    w, x, y, z = q
-
-    siny_cosp = 2.0 * (w * z + x * y)
-    cosy_cosp = 1.0 - 2.0 * (y * y + z * z)
-
-    return math.atan2(siny_cosp, cosy_cosp)
-
-
-# ============================================================
-# Isaac Sim ground-truth ROS 2 publisher
-# ============================================================
-
-class ForkliftGroundTruth(Node):
-
-    def __init__(self, stage):
-
-        super().__init__("forklift_ground_truth")
-
-        self.stage = stage
-
-        self.robot_prim = stage.GetPrimAtPath(
-            ROBOT_PRIM
-        )
-
-        if not self.robot_prim.IsValid():
-            raise RuntimeError(
-                f"Robot prim not found: {ROBOT_PRIM}"
-            )
-
-        self.odom_pub = self.create_publisher(
-            Odometry,
-            ODOM_TOPIC,
-            10
-        )
-
-        self.tf_broadcaster = TransformBroadcaster(
-            self
-        )
-
-        # Previous state for velocity estimation
-        self.prev_time = None
-        self.prev_x = None
-        self.prev_y = None
-        self.prev_yaw = None
-
-        self.timer = self.create_timer(
-            1.0 / PUBLISH_HZ,
-            self.publish_ground_truth
-        )
-
-        self.get_logger().info(
-            f"Ground truth publisher started"
-        )
-
-        self.get_logger().info(
-            f"Robot: {ROBOT_PRIM}"
-        )
-
-        self.get_logger().info(
-            f"Publishing: {ODOM_TOPIC}"
-        )
-
-    # --------------------------------------------------------
-    # Get forklift world pose
-    # --------------------------------------------------------
-
-    def get_robot_pose(self):
-
-        xform = UsdGeom.Xformable(
-            self.robot_prim
-        )
-
-        transform = xform.ComputeLocalToWorldTransform(
-            Usd.TimeCode.Default()
-        )
-
-        translation = transform.ExtractTranslation()
-
-        rotation = transform.ExtractRotation()
-
-        quat = rotation.GetQuaternion()
-
-        # Gf.Quatd -> wxyz
-        w = quat.GetReal()
-
-        imag = quat.GetImaginary()
-
-        xq = imag[0]
-        yq = imag[1]
-        zq = imag[2]
-
-        yaw = quat_wxyz_to_yaw(
-            [w, xq, yq, zq]
-        )
-
-        return (
-            float(translation[0]),
-            float(translation[1]),
-            float(translation[2]),
-            w,
-            xq,
-            yq,
-            zq,
-            yaw
-        )
-
-    # --------------------------------------------------------
-    # Publish odom + TF
-    # --------------------------------------------------------
-
-    def publish_ground_truth(self):
-
-        now = self.get_clock().now()
-
-        (
-            x,
-            y,
-            z,
-            qw,
-            qx,
-            qy,
-            qz,
-            yaw
-        ) = self.get_robot_pose()
-
-        current_time = now.nanoseconds * 1e-9
-
-        # ----------------------------------------------------
-        # Estimate velocity from ground truth pose
-        # ----------------------------------------------------
-
-        vx = 0.0
-        vy = 0.0
-        wz = 0.0
-
-        if self.prev_time is not None:
-
-            dt = current_time - self.prev_time
-
-            if dt > 1e-6:
-
-                vx_world = (
-                    x - self.prev_x
-                ) / dt
-
-                vy_world = (
-                    y - self.prev_y
-                ) / dt
-
-                dyaw = yaw - self.prev_yaw
-
-                # Normalize angle
-                while dyaw > math.pi:
-                    dyaw -= 2.0 * math.pi
-
-                while dyaw < -math.pi:
-                    dyaw += 2.0 * math.pi
-
-                wz = dyaw / dt
-
-                # Convert world velocity to base_link
-                cos_yaw = math.cos(yaw)
-                sin_yaw = math.sin(yaw)
-
-                vx = (
-                    cos_yaw * vx_world
-                    + sin_yaw * vy_world
-                )
-
-                vy = (
-                    -sin_yaw * vx_world
-                    + cos_yaw * vy_world
-                )
-
-        self.prev_time = current_time
-        self.prev_x = x
-        self.prev_y = y
-        self.prev_yaw = yaw
-
-        # ----------------------------------------------------
-        # Odometry message
-        # ----------------------------------------------------
-
-        odom = Odometry()
-
-        odom.header.stamp = now.to_msg()
-
-        odom.header.frame_id = ODOM_FRAME
-        odom.child_frame_id = BASE_FRAME
-
-        odom.pose.pose.position.x = x
-        odom.pose.pose.position.y = y
-        odom.pose.pose.position.z = z
-
-        odom.pose.pose.orientation.w = qw
-        odom.pose.pose.orientation.x = qx
-        odom.pose.pose.orientation.y = qy
-        odom.pose.pose.orientation.z = qz
-
-        odom.twist.twist.linear.x = vx
-        odom.twist.twist.linear.y = vy
-        odom.twist.twist.angular.z = wz
-
-        self.odom_pub.publish(odom)
-
-        # ----------------------------------------------------
-        # TF: odom -> base_link
-        # ----------------------------------------------------
-
-        tf = TransformStamped()
-
-        tf.header.stamp = now.to_msg()
-
-        tf.header.frame_id = ODOM_FRAME
-        tf.child_frame_id = BASE_FRAME
-
-        tf.transform.translation.x = x
-        tf.transform.translation.y = y
-        tf.transform.translation.z = z
-
-        tf.transform.rotation.w = qw
-        tf.transform.rotation.x = qx
-        tf.transform.rotation.y = qy
-        tf.transform.rotation.z = qz
-
-        self.tf_broadcaster.sendTransform(tf)
 
 
 # ============================================================
 # Main
 # ============================================================
 
-def main():
+try:
 
-    print("Opening forklift USD...")
+    print("=" * 70)
+    print("Starting Isaac Sim")
+    print("=" * 70)
 
-    stage = Usd.Stage.Open(USD_PATH)
+    # --------------------------------------------------------
+    # Enable ROS 2 bridge
+    # --------------------------------------------------------
+
+    app = omni.kit.app.get_app()
+
+    extension_manager = (
+        app.get_extension_manager()
+    )
+
+    extension_manager.set_extension_enabled_immediate(
+        "isaacsim.ros2.bridge",
+        True
+    )
+
+    # Give ROS2 bridge time to initialize
+    for _ in range(30):
+        simulation_app.update()
+
+    print("ROS 2 bridge enabled")
+
+    # --------------------------------------------------------
+    # Open USD
+    # --------------------------------------------------------
+
+    print()
+    print("Opening USD:")
+    print(f"  {USD_PATH}")
+
+    usd_context = omni.usd.get_context()
+
+    result = usd_context.open_stage(USD_PATH)
+
+    if not result:
+        raise RuntimeError(
+            f"Failed to open USD: {USD_PATH}"
+        )
+
+    # Wait for stage
+    stage = None
+
+    for _ in range(100):
+
+        simulation_app.update()
+
+        stage = usd_context.get_stage()
+
+        if stage is not None:
+            break
 
     if stage is None:
         raise RuntimeError(
-            f"Unable to open: {USD_PATH}"
+            "USD stage was not created."
         )
 
-    # Let Isaac Sim initialize the stage
-    for _ in range(20):
+    robot = stage.GetPrimAtPath(ROBOT_PRIM)
+
+    if not robot.IsValid():
+        raise RuntimeError(
+            f"Robot prim not found: {ROBOT_PRIM}"
+        )
+
+    print(
+        f"Robot prim found: {ROBOT_PRIM}"
+    )
+
+    # --------------------------------------------------------
+    # Create ROS2 Action Graph
+    # --------------------------------------------------------
+
+    print()
+    print("=" * 70)
+    print("Creating Ground Truth ROS 2 Action Graph")
+    print("=" * 70)
+
+    print(
+        f"Graph path: {GRAPH_PATH}"
+    )
+
+    keys = og.Controller.Keys
+
+    og.Controller.edit(
+        {
+            "graph_path": GRAPH_PATH,
+            "evaluator_name": "execution",
+        },
+        {
+
+            # =================================================
+            # CREATE NODES
+            # =================================================
+
+            keys.CREATE_NODES: [
+
+                # Simulation tick
+                (
+                    "OnPlaybackTick",
+                    "omni.graph.action.OnPlaybackTick"
+                ),
+
+                # Isaac simulation time
+                (
+                    "ReadSimTime",
+                    "isaacsim.core.nodes.IsaacReadSimulationTime"
+                ),
+
+                # ROS 2 context
+                (
+                    "ROS2Context",
+                    "isaacsim.ros2.bridge.ROS2Context"
+                ),
+
+                # Ground truth odometry
+                (
+                    "ComputeOdom",
+                    "isaacsim.core.nodes.IsaacComputeOdometry"
+                ),
+
+                # Odometry publisher
+                (
+                    "PublishOdom",
+                    "isaacsim.ros2.bridge.ROS2PublishOdometry"
+                ),
+
+                # TF publisher
+                (
+                    "PublishTF",
+                    "isaacsim.ros2.bridge.ROS2PublishRawTransformTree"
+                ),
+
+                # =================================================
+                # NEW: ROS2 CLOCK PUBLISHER
+                # =================================================
+
+                (
+                    "PublishClock",
+                    "isaacsim.ros2.bridge.ROS2PublishClock"
+                ),
+            ],
+
+            # =================================================
+            # SET VALUES
+            # =================================================
+
+            keys.SET_VALUES: [
+
+                # ------------------------------------------------
+                # Ground truth robot
+                # ------------------------------------------------
+
+                (
+                    "ComputeOdom.inputs:chassisPrim",
+                    [
+                        Sdf.Path(ROBOT_PRIM)
+                    ]
+                ),
+
+                # ------------------------------------------------
+                # Odometry
+                # ------------------------------------------------
+
+                (
+                    "PublishOdom.inputs:topicName",
+                    ODOM_TOPIC
+                ),
+
+                (
+                    "PublishOdom.inputs:odomFrameId",
+                    ODOM_FRAME
+                ),
+
+                (
+                    "PublishOdom.inputs:chassisFrameId",
+                    BASE_FRAME
+                ),
+
+                (
+                    "PublishOdom.inputs:queueSize",
+                    10
+                ),
+
+                # ------------------------------------------------
+                # TF
+                # ------------------------------------------------
+
+                (
+                    "PublishTF.inputs:topicName",
+                    TF_TOPIC
+                ),
+
+                (
+                    "PublishTF.inputs:parentFrameId",
+                    ODOM_FRAME
+                ),
+
+                (
+                    "PublishTF.inputs:childFrameId",
+                    BASE_FRAME
+                ),
+
+                (
+                    "PublishTF.inputs:queueSize",
+                    10
+                ),
+
+                (
+                    "PublishTF.inputs:staticPublisher",
+                    False
+                ),
+
+                # ------------------------------------------------
+                # CLOCK
+                # ------------------------------------------------
+
+                (
+                    "PublishClock.inputs:topicName",
+                    CLOCK_TOPIC
+                ),
+
+                (
+                    "PublishClock.inputs:queueSize",
+                    10
+                ),
+            ],
+
+            # =================================================
+            # CONNECTIONS
+            # =================================================
+
+            keys.CONNECT: [
+
+                # =================================================
+                # SIMULATION TICK
+                # =================================================
+
+                (
+                    "OnPlaybackTick.outputs:tick",
+                    "ComputeOdom.inputs:execIn"
+                ),
+
+                (
+                    "OnPlaybackTick.outputs:tick",
+                    "PublishTF.inputs:execIn"
+                ),
+
+                # =================================================
+                # CLOCK
+                #
+                # IMPORTANT:
+                # ReadSimTime does NOT need execIn.
+                #
+                # The simulation tick directly executes
+                # PublishClock.
+                # =================================================
+
+                (
+                    "OnPlaybackTick.outputs:tick",
+                    "PublishClock.inputs:execIn"
+                ),
+
+                (
+                    "ReadSimTime.outputs:simulationTime",
+                    "PublishClock.inputs:timeStamp"
+                ),
+
+                # =================================================
+                # ODOMETRY
+                # =================================================
+
+                (
+                    "ComputeOdom.outputs:execOut",
+                    "PublishOdom.inputs:execIn"
+                ),
+
+                (
+                    "ComputeOdom.outputs:position",
+                    "PublishOdom.inputs:position"
+                ),
+
+                (
+                    "ComputeOdom.outputs:orientation",
+                    "PublishOdom.inputs:orientation"
+                ),
+
+                (
+                    "ComputeOdom.outputs:linearVelocity",
+                    "PublishOdom.inputs:linearVelocity"
+                ),
+
+                (
+                    "ComputeOdom.outputs:angularVelocity",
+                    "PublishOdom.inputs:angularVelocity"
+                ),
+
+                (
+                    "ReadSimTime.outputs:simulationTime",
+                    "PublishOdom.inputs:timeStamp"
+                ),
+
+                # =================================================
+                # TF
+                # =================================================
+
+                (
+                    "ComputeOdom.outputs:position",
+                    "PublishTF.inputs:translation"
+                ),
+
+                (
+                    "ComputeOdom.outputs:orientation",
+                    "PublishTF.inputs:rotation"
+                ),
+
+                (
+                    "ReadSimTime.outputs:simulationTime",
+                    "PublishTF.inputs:timeStamp"
+                ),
+
+                # =================================================
+                # ROS2 CONTEXT
+                # =================================================
+
+                (
+                    "ROS2Context.outputs:context",
+                    "PublishOdom.inputs:context"
+                ),
+
+                (
+                    "ROS2Context.outputs:context",
+                    "PublishTF.inputs:context"
+                ),
+
+                (
+                    "ROS2Context.outputs:context",
+                    "PublishClock.inputs:context"
+                ),
+            ],
+        },
+    )
+
+    print()
+    print("Action Graph created successfully.")
+
+    # --------------------------------------------------------
+    # Start simulation
+    # --------------------------------------------------------
+
+    timeline = (
+        omni.timeline.get_timeline_interface()
+    )
+
+    timeline.play()
+
+    print()
+    print("=" * 70)
+    print("GROUND TRUTH ROS 2 RUNNING")
+    print("=" * 70)
+
+    print()
+    print("Robot:")
+    print(f"  {ROBOT_PRIM}")
+
+    print()
+    print("Odometry:")
+    print(f"  Topic:       {ODOM_TOPIC}")
+    print(f"  Frame:       {ODOM_FRAME}")
+    print(f"  Child frame: {BASE_FRAME}")
+
+    print()
+    print("TF:")
+    print(f"  Topic:  {TF_TOPIC}")
+    print(f"  Parent: {ODOM_FRAME}")
+    print(f"  Child:  {BASE_FRAME}")
+
+    print()
+    print("Clock:")
+    print(f"  Topic: {CLOCK_TOPIC}")
+    print("  Source: IsaacReadSimulationTime")
+
+    print()
+    print("Press Ctrl+C to stop.")
+    print()
+
+    # --------------------------------------------------------
+    # Simulation loop
+    # --------------------------------------------------------
+
+    while simulation_app.is_running():
+
         simulation_app.update()
 
-    rclpy.init()
 
-    node = None
+except KeyboardInterrupt:
 
-    try:
-
-        node = ForkliftGroundTruth(stage)
-
-        while simulation_app.is_running():
-
-            # Advance Isaac Sim
-            simulation_app.update()
-
-            # Process ROS 2
-            rclpy.spin_once(
-                node,
-                timeout_sec=0.0
-            )
-
-    except KeyboardInterrupt:
-        pass
-
-    finally:
-
-        if node is not None:
-            node.destroy_node()
-
-        if rclpy.ok():
-            rclpy.shutdown()
-
-        simulation_app.close()
+    print()
+    print("Interrupted by user.")
 
 
-if __name__ == "__main__":
-    main()
+except Exception as e:
+
+    print()
+    print("=" * 70)
+    print("ERROR")
+    print("=" * 70)
+
+    print(type(e).__name__)
+    print(str(e))
+
+    raise
+
+
+finally:
+
+    print()
+    print("Closing Isaac Sim...")
+
+    simulation_app.close()
