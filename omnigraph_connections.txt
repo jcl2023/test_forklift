@@ -1,0 +1,5662 @@
+
+====================================================================================================
+USD INFORMATION
+====================================================================================================
+USD: /home/ubuntu/isaac_assets/test_forklift/forklift_c_camera.usd
+Root layer: /home/ubuntu/isaac_assets/test_forklift/forklift_c_camera.usd
+
+====================================================================================================
+OMNIGRAPH / ACTION GRAPH PRIMS
+====================================================================================================
+/World/forklift_c/forklift_main [OmniGraph]
+/World/forklift_c/forklift_main/on_playback_tick [OmniGraphNode]
+/World/forklift_c/forklift_main/ros2_context [OmniGraphNode]
+/World/forklift_c/forklift_main/ros2_qos_profile [OmniGraphNode]
+/World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive [OmniGraphNode]
+/World/forklift_c/forklift_main/ackermann_controller [OmniGraphNode]
+/World/forklift_c/forklift_main/articulation_controller [OmniGraphNode]
+/World/forklift_c/forklift_main/articulation_controller_01 [OmniGraphNode]
+/World/forklift_c/forklift_main/get_array_slice [OmniGraphNode]
+/World/forklift_c/forklift_main/articulation_controller_02 [OmniGraphNode]
+/World/forklift_c/forklift_main/ros2_subscribe_joint_state [OmniGraphNode]
+/World/forklift_c/front_hawk_left [OmniGraph]
+/World/forklift_c/front_hawk_left/on_playback_tick [OmniGraphNode]
+/World/forklift_c/front_hawk_left/ros2_context [OmniGraphNode]
+/World/forklift_c/front_hawk_left/left_camera_render_product [OmniGraphNode]
+/World/forklift_c/front_hawk_left/right_camera_render_product [OmniGraphNode]
+/World/forklift_c/front_hawk_left/left_camera_publish_image [OmniGraphNode]
+/World/forklift_c/front_hawk_left/right_camera_publish_image [OmniGraphNode]
+/World/forklift_c/front_hawk_left/right_camera_frame_id [OmniGraphNode]
+/World/forklift_c/front_hawk_left/left_camera_frame_id [OmniGraphNode]
+/World/forklift_c/front_hawk_left/isaac_read_imu_node [OmniGraphNode]
+/World/forklift_c/front_hawk_left/ros2_publish_imu [OmniGraphNode]
+/World/forklift_c/front_hawk_left/isaac_run_one_simualtion_frame [OmniGraphNode]
+/World/forklift_c/front_hawk_left/camera_namespace [OmniGraphNode]
+/World/forklift_c/front_hawk_left/ros2_camera_info_helper [OmniGraphNode]
+/World/forklift_c/front_hawk_left/ros2_qos_profile [OmniGraphNode]
+/World/forklift_c/front_hawk_left/isaac_read_simulation_time [OmniGraphNode]
+/World/forklift_c/front_hawk_right [OmniGraph]
+/World/forklift_c/front_hawk_right/on_playback_tick [OmniGraphNode]
+/World/forklift_c/front_hawk_right/ros2_context [OmniGraphNode]
+/World/forklift_c/front_hawk_right/left_camera_render_product [OmniGraphNode]
+/World/forklift_c/front_hawk_right/right_camera_render_product [OmniGraphNode]
+/World/forklift_c/front_hawk_right/left_camera_publish_image [OmniGraphNode]
+/World/forklift_c/front_hawk_right/right_camera_publish_image [OmniGraphNode]
+/World/forklift_c/front_hawk_right/right_camera_frame_id [OmniGraphNode]
+/World/forklift_c/front_hawk_right/left_camera_frame_id [OmniGraphNode]
+/World/forklift_c/front_hawk_right/isaac_read_imu_node [OmniGraphNode]
+/World/forklift_c/front_hawk_right/ros2_publish_imu [OmniGraphNode]
+/World/forklift_c/front_hawk_right/isaac_run_one_simualtion_frame [OmniGraphNode]
+/World/forklift_c/front_hawk_right/camera_namespace [OmniGraphNode]
+/World/forklift_c/front_hawk_right/ros2_camera_info_helper [OmniGraphNode]
+/World/forklift_c/front_hawk_right/ros2_qos_profile [OmniGraphNode]
+/World/forklift_c/front_hawk_right/isaac_read_simulation_time [OmniGraphNode]
+
+====================================================================================================
+POSSIBLE OMNIGRAPH NODES
+====================================================================================================
+/World/forklift_c/left_front_wheel_joint [PhysicsRevoluteJoint]
+/World/forklift_c/left_back_wheel_joint [PhysicsRevoluteJoint]
+/World/forklift_c/right_front_wheel_joint [PhysicsRevoluteJoint]
+/World/forklift_c/right_back_wheel_joint [PhysicsRevoluteJoint]
+/World/forklift_c/left_rotator_joint [PhysicsRevoluteJoint]
+/World/forklift_c/right_rotator_joint [PhysicsRevoluteJoint]
+/World/forklift_c/lift_joint [PhysicsPrismaticJoint]
+/World/forklift_c/body/ros2_sensors [Xform]
+/World/forklift_c/body/sensors/front_hawk_left/right/camera_right [Camera]
+/World/forklift_c/body/sensors/front_hawk_left/left/camera_left [Camera]
+/World/forklift_c/body/sensors/front_hawk_left/Imu [Xform]
+/World/forklift_c/body/sensors/front_hawk_left/Imu/Imu_Sensor [IsaacImuSensor]
+/World/forklift_c/body/sensors/front_hawk_right/right/camera_right [Camera]
+/World/forklift_c/body/sensors/front_hawk_right/left/camera_left [Camera]
+/World/forklift_c/body/sensors/front_hawk_right/Imu [Xform]
+/World/forklift_c/body/sensors/front_hawk_right/Imu/Imu_Sensor [IsaacImuSensor]
+/World/forklift_c/forklift_main [OmniGraph]
+/World/forklift_c/forklift_main/on_playback_tick [OmniGraphNode]
+/World/forklift_c/forklift_main/ros2_context [OmniGraphNode]
+/World/forklift_c/forklift_main/ros2_qos_profile [OmniGraphNode]
+/World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive [OmniGraphNode]
+/World/forklift_c/forklift_main/ackermann_controller [OmniGraphNode]
+/World/forklift_c/forklift_main/articulation_controller [OmniGraphNode]
+/World/forklift_c/forklift_main/articulation_controller_01 [OmniGraphNode]
+/World/forklift_c/forklift_main/get_array_slice [OmniGraphNode]
+/World/forklift_c/forklift_main/articulation_controller_02 [OmniGraphNode]
+/World/forklift_c/forklift_main/ros2_subscribe_joint_state [OmniGraphNode]
+/World/forklift_c/front_hawk_left [OmniGraph]
+/World/forklift_c/front_hawk_left/on_playback_tick [OmniGraphNode]
+/World/forklift_c/front_hawk_left/ros2_context [OmniGraphNode]
+/World/forklift_c/front_hawk_left/left_camera_render_product [OmniGraphNode]
+/World/forklift_c/front_hawk_left/right_camera_render_product [OmniGraphNode]
+/World/forklift_c/front_hawk_left/left_camera_publish_image [OmniGraphNode]
+/World/forklift_c/front_hawk_left/right_camera_publish_image [OmniGraphNode]
+/World/forklift_c/front_hawk_left/right_camera_frame_id [OmniGraphNode]
+/World/forklift_c/front_hawk_left/left_camera_frame_id [OmniGraphNode]
+/World/forklift_c/front_hawk_left/isaac_read_imu_node [OmniGraphNode]
+/World/forklift_c/front_hawk_left/ros2_publish_imu [OmniGraphNode]
+/World/forklift_c/front_hawk_left/isaac_run_one_simualtion_frame [OmniGraphNode]
+/World/forklift_c/front_hawk_left/camera_namespace [OmniGraphNode]
+/World/forklift_c/front_hawk_left/ros2_camera_info_helper [OmniGraphNode]
+/World/forklift_c/front_hawk_left/ros2_qos_profile [OmniGraphNode]
+/World/forklift_c/front_hawk_left/isaac_read_simulation_time [OmniGraphNode]
+/World/forklift_c/front_hawk_right [OmniGraph]
+/World/forklift_c/front_hawk_right/on_playback_tick [OmniGraphNode]
+/World/forklift_c/front_hawk_right/ros2_context [OmniGraphNode]
+/World/forklift_c/front_hawk_right/left_camera_render_product [OmniGraphNode]
+/World/forklift_c/front_hawk_right/right_camera_render_product [OmniGraphNode]
+/World/forklift_c/front_hawk_right/left_camera_publish_image [OmniGraphNode]
+/World/forklift_c/front_hawk_right/right_camera_publish_image [OmniGraphNode]
+/World/forklift_c/front_hawk_right/right_camera_frame_id [OmniGraphNode]
+/World/forklift_c/front_hawk_right/left_camera_frame_id [OmniGraphNode]
+/World/forklift_c/front_hawk_right/isaac_read_imu_node [OmniGraphNode]
+/World/forklift_c/front_hawk_right/ros2_publish_imu [OmniGraphNode]
+/World/forklift_c/front_hawk_right/isaac_run_one_simualtion_frame [OmniGraphNode]
+/World/forklift_c/front_hawk_right/camera_namespace [OmniGraphNode]
+/World/forklift_c/front_hawk_right/ros2_camera_info_helper [OmniGraphNode]
+/World/forklift_c/front_hawk_right/ros2_qos_profile [OmniGraphNode]
+/World/forklift_c/front_hawk_right/isaac_read_simulation_time [OmniGraphNode]
+/front_hawk_left/right/camera_right [Camera]
+/front_hawk_left/left/camera_left [Camera]
+/front_hawk_left/Imu [Xform]
+/front_hawk_left/Imu/Imu_Sensor [IsaacImuSensor]
+
+====================================================================================================
+NODE ATTRIBUTES
+====================================================================================================
+
+NODE: /World/forklift_c/left_front_wheel_joint
+TYPE: PhysicsRevoluteJoint
+  ATTRIBUTE: drive:angular:physics:damping
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:maxForce
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: drive:angular:physics:stiffness
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:targetPosition
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:targetVelocity
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:type
+    TYPE: token
+    VALUE: acceleration
+  ATTRIBUTE: isaac:actuator
+    TYPE: bool[]
+    VALUE: [0, 0, 0, 0, 0, 0]
+  ATTRIBUTE: isaac:NameOverride
+    TYPE: string
+    VALUE: 
+  ATTRIBUTE: isaac:nameOverride
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: isaac:physics:AccelerationLimit
+    TYPE: float[]
+    VALUE: [-1, -1, -1, -1, -1, -1]
+  ATTRIBUTE: isaac:physics:JerkLimit
+    TYPE: float[]
+    VALUE: [-1, -1, -1, -1, -1, -1, -1]
+  ATTRIBUTE: isaac:physics:Rot_X:DoFOffset
+    TYPE: int
+    VALUE: 0
+  ATTRIBUTE: isaac:physics:Rot_X:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Rot_Y:DoFOffset
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: isaac:physics:Rot_Y:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Rot_Z:DoFOffset
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: isaac:physics:Rot_Z:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_X:DoFOffset
+    TYPE: int
+    VALUE: 3
+  ATTRIBUTE: isaac:physics:Tr_X:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_Y:DoFOffset
+    TYPE: int
+    VALUE: 4
+  ATTRIBUTE: isaac:physics:Tr_Y:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_Z:DoFOffset
+    TYPE: int
+    VALUE: 5
+  ATTRIBUTE: isaac:physics:Tr_Z:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: physics:axis
+    TYPE: token
+    VALUE: X
+  ATTRIBUTE: physics:breakForce
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physics:breakTorque
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physics:collisionEnabled
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: physics:excludeFromArticulation
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: physics:jointEnabled
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: physics:localPos0
+    TYPE: point3f
+    VALUE: (26.87796, 59.74939, 32.51018)
+  ATTRIBUTE: physics:localPos1
+    TYPE: point3f
+    VALUE: (26.87796, 59.74939, 32.51018)
+  ATTRIBUTE: physics:localRot0
+    TYPE: quatf
+    VALUE: (0.70710677, 0, 0, 0.70710677)
+  ATTRIBUTE: physics:localRot1
+    TYPE: quatf
+    VALUE: (0.70710677, 0, 0, 0.70710677)
+  ATTRIBUTE: physics:lowerLimit
+    TYPE: float
+    VALUE: -inf
+  ATTRIBUTE: physics:upperLimit
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: state:angular:physics:position
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: state:angular:physics:velocity
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: invisible
+
+NODE: /World/forklift_c/left_back_wheel_joint
+TYPE: PhysicsRevoluteJoint
+  ATTRIBUTE: drive:angular:physics:damping
+    TYPE: float
+    VALUE: 10000.0
+  ATTRIBUTE: drive:angular:physics:maxForce
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: drive:angular:physics:stiffness
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:targetPosition
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:targetVelocity
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:type
+    TYPE: token
+    VALUE: force
+  ATTRIBUTE: isaac:actuator
+    TYPE: bool[]
+    VALUE: [0, 0, 0, 0, 0, 0]
+  ATTRIBUTE: isaac:NameOverride
+    TYPE: string
+    VALUE: 
+  ATTRIBUTE: isaac:nameOverride
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: isaac:physics:AccelerationLimit
+    TYPE: float[]
+    VALUE: [-1, -1, -1, -1, -1, -1]
+  ATTRIBUTE: isaac:physics:JerkLimit
+    TYPE: float[]
+    VALUE: [-1, -1, -1, -1, -1, -1, -1]
+  ATTRIBUTE: isaac:physics:Rot_X:DoFOffset
+    TYPE: int
+    VALUE: 0
+  ATTRIBUTE: isaac:physics:Rot_X:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Rot_Y:DoFOffset
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: isaac:physics:Rot_Y:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Rot_Z:DoFOffset
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: isaac:physics:Rot_Z:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_X:DoFOffset
+    TYPE: int
+    VALUE: 3
+  ATTRIBUTE: isaac:physics:Tr_X:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_Y:DoFOffset
+    TYPE: int
+    VALUE: 4
+  ATTRIBUTE: isaac:physics:Tr_Y:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_Z:DoFOffset
+    TYPE: int
+    VALUE: 5
+  ATTRIBUTE: isaac:physics:Tr_Z:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: physics:axis
+    TYPE: token
+    VALUE: X
+  ATTRIBUTE: physics:breakForce
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physics:breakTorque
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physics:collisionEnabled
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: physics:excludeFromArticulation
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: physics:jointEnabled
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: physics:localPos0
+    TYPE: point3f
+    VALUE: (-138.32516, 62.23241, 25.669548)
+  ATTRIBUTE: physics:localPos1
+    TYPE: point3f
+    VALUE: (-138.32516, 62.23241, 25.669548)
+  ATTRIBUTE: physics:localRot0
+    TYPE: quatf
+    VALUE: (0.70710677, 0, 0, 0.70710677)
+  ATTRIBUTE: physics:localRot1
+    TYPE: quatf
+    VALUE: (0.70710677, 0, 0, 0.70710677)
+  ATTRIBUTE: physics:lowerLimit
+    TYPE: float
+    VALUE: -inf
+  ATTRIBUTE: physics:upperLimit
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physxLimit:angular:bounceThreshold
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: physxLimit:angular:damping
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: physxLimit:angular:restitution
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: physxLimit:angular:stiffness
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: state:angular:physics:position
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: state:angular:physics:velocity
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: invisible
+
+NODE: /World/forklift_c/right_front_wheel_joint
+TYPE: PhysicsRevoluteJoint
+  ATTRIBUTE: drive:angular:physics:damping
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:maxForce
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: drive:angular:physics:stiffness
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:targetPosition
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:targetVelocity
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:type
+    TYPE: token
+    VALUE: force
+  ATTRIBUTE: isaac:actuator
+    TYPE: bool[]
+    VALUE: [0, 0, 0, 0, 0, 0]
+  ATTRIBUTE: isaac:NameOverride
+    TYPE: string
+    VALUE: 
+  ATTRIBUTE: isaac:nameOverride
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: isaac:physics:AccelerationLimit
+    TYPE: float[]
+    VALUE: [-1, -1, -1, -1, -1, -1]
+  ATTRIBUTE: isaac:physics:JerkLimit
+    TYPE: float[]
+    VALUE: [-1, -1, -1, -1, -1, -1, -1]
+  ATTRIBUTE: isaac:physics:Rot_X:DoFOffset
+    TYPE: int
+    VALUE: 0
+  ATTRIBUTE: isaac:physics:Rot_X:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Rot_Y:DoFOffset
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: isaac:physics:Rot_Y:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Rot_Z:DoFOffset
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: isaac:physics:Rot_Z:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_X:DoFOffset
+    TYPE: int
+    VALUE: 3
+  ATTRIBUTE: isaac:physics:Tr_X:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_Y:DoFOffset
+    TYPE: int
+    VALUE: 4
+  ATTRIBUTE: isaac:physics:Tr_Y:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_Z:DoFOffset
+    TYPE: int
+    VALUE: 5
+  ATTRIBUTE: isaac:physics:Tr_Z:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: physics:axis
+    TYPE: token
+    VALUE: X
+  ATTRIBUTE: physics:breakForce
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physics:breakTorque
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physics:collisionEnabled
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: physics:excludeFromArticulation
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: physics:jointEnabled
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: physics:localPos0
+    TYPE: point3f
+    VALUE: (26.87802, -59.744, 32.51018)
+  ATTRIBUTE: physics:localPos1
+    TYPE: point3f
+    VALUE: (26.87802, -59.744, 32.51018)
+  ATTRIBUTE: physics:localRot0
+    TYPE: quatf
+    VALUE: (0.70710677, 0, 0, 0.70710677)
+  ATTRIBUTE: physics:localRot1
+    TYPE: quatf
+    VALUE: (0.70710677, 0, 0, 0.70710677)
+  ATTRIBUTE: physics:lowerLimit
+    TYPE: float
+    VALUE: -inf
+  ATTRIBUTE: physics:upperLimit
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: state:angular:physics:position
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: state:angular:physics:velocity
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: invisible
+
+NODE: /World/forklift_c/right_back_wheel_joint
+TYPE: PhysicsRevoluteJoint
+  ATTRIBUTE: drive:angular:physics:damping
+    TYPE: float
+    VALUE: 10000.0
+  ATTRIBUTE: drive:angular:physics:maxForce
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: drive:angular:physics:stiffness
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:targetPosition
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:targetVelocity
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:type
+    TYPE: token
+    VALUE: force
+  ATTRIBUTE: isaac:actuator
+    TYPE: bool[]
+    VALUE: [0, 0, 0, 0, 0, 0]
+  ATTRIBUTE: isaac:NameOverride
+    TYPE: string
+    VALUE: 
+  ATTRIBUTE: isaac:nameOverride
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: isaac:physics:AccelerationLimit
+    TYPE: float[]
+    VALUE: [-1, -1, -1, -1, -1, -1]
+  ATTRIBUTE: isaac:physics:JerkLimit
+    TYPE: float[]
+    VALUE: [-1, -1, -1, -1, -1, -1, -1]
+  ATTRIBUTE: isaac:physics:Rot_X:DoFOffset
+    TYPE: int
+    VALUE: 0
+  ATTRIBUTE: isaac:physics:Rot_X:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Rot_Y:DoFOffset
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: isaac:physics:Rot_Y:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Rot_Z:DoFOffset
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: isaac:physics:Rot_Z:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_X:DoFOffset
+    TYPE: int
+    VALUE: 3
+  ATTRIBUTE: isaac:physics:Tr_X:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_Y:DoFOffset
+    TYPE: int
+    VALUE: 4
+  ATTRIBUTE: isaac:physics:Tr_Y:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_Z:DoFOffset
+    TYPE: int
+    VALUE: 5
+  ATTRIBUTE: isaac:physics:Tr_Z:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: physics:axis
+    TYPE: token
+    VALUE: X
+  ATTRIBUTE: physics:breakForce
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physics:breakTorque
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physics:collisionEnabled
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: physics:excludeFromArticulation
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: physics:jointEnabled
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: physics:localPos0
+    TYPE: point3f
+    VALUE: (-138.32516, -62.23241, 25.669548)
+  ATTRIBUTE: physics:localPos1
+    TYPE: point3f
+    VALUE: (-138.32516, -62.23241, 25.669548)
+  ATTRIBUTE: physics:localRot0
+    TYPE: quatf
+    VALUE: (0.70710677, 0, 0, 0.70710677)
+  ATTRIBUTE: physics:localRot1
+    TYPE: quatf
+    VALUE: (0.70710677, 0, 0, 0.70710677)
+  ATTRIBUTE: physics:lowerLimit
+    TYPE: float
+    VALUE: -inf
+  ATTRIBUTE: physics:upperLimit
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physxLimit:angular:bounceThreshold
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: physxLimit:angular:damping
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: physxLimit:angular:restitution
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: physxLimit:angular:stiffness
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: state:angular:physics:position
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: state:angular:physics:velocity
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: invisible
+
+NODE: /World/forklift_c/left_rotator_joint
+TYPE: PhysicsRevoluteJoint
+  ATTRIBUTE: drive:angular:physics:damping
+    TYPE: float
+    VALUE: 1000.0
+  ATTRIBUTE: drive:angular:physics:maxForce
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: drive:angular:physics:stiffness
+    TYPE: float
+    VALUE: 10000000.0
+  ATTRIBUTE: drive:angular:physics:targetPosition
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:targetVelocity
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:type
+    TYPE: token
+    VALUE: force
+  ATTRIBUTE: isaac:actuator
+    TYPE: bool[]
+    VALUE: [0, 0, 0, 0, 0, 0]
+  ATTRIBUTE: isaac:NameOverride
+    TYPE: string
+    VALUE: 
+  ATTRIBUTE: isaac:nameOverride
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: isaac:physics:AccelerationLimit
+    TYPE: float[]
+    VALUE: [-1, -1, -1, -1, -1, -1]
+  ATTRIBUTE: isaac:physics:JerkLimit
+    TYPE: float[]
+    VALUE: [-1, -1, -1, -1, -1, -1, -1]
+  ATTRIBUTE: isaac:physics:Rot_X:DoFOffset
+    TYPE: int
+    VALUE: 0
+  ATTRIBUTE: isaac:physics:Rot_X:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Rot_Y:DoFOffset
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: isaac:physics:Rot_Y:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Rot_Z:DoFOffset
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: isaac:physics:Rot_Z:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_X:DoFOffset
+    TYPE: int
+    VALUE: 3
+  ATTRIBUTE: isaac:physics:Tr_X:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_Y:DoFOffset
+    TYPE: int
+    VALUE: 4
+  ATTRIBUTE: isaac:physics:Tr_Y:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_Z:DoFOffset
+    TYPE: int
+    VALUE: 5
+  ATTRIBUTE: isaac:physics:Tr_Z:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: physics:axis
+    TYPE: token
+    VALUE: Z
+  ATTRIBUTE: physics:breakForce
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physics:breakTorque
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physics:collisionEnabled
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: physics:excludeFromArticulation
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: physics:jointEnabled
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: physics:localPos0
+    TYPE: point3f
+    VALUE: (-138.5914, 40.61331, 21.02286)
+  ATTRIBUTE: physics:localPos1
+    TYPE: point3f
+    VALUE: (-138.5914, 40.61331, 21.02286)
+  ATTRIBUTE: physics:localRot0
+    TYPE: quatf
+    VALUE: (0.70710677, 0, 0, 0.70710677)
+  ATTRIBUTE: physics:localRot1
+    TYPE: quatf
+    VALUE: (0.70710677, 0, 0, 0.70710677)
+  ATTRIBUTE: physics:lowerLimit
+    TYPE: float
+    VALUE: -45.0
+  ATTRIBUTE: physics:upperLimit
+    TYPE: float
+    VALUE: 45.0
+  ATTRIBUTE: physxLimit:angular:bounceThreshold
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: physxLimit:angular:damping
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: physxLimit:angular:restitution
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: physxLimit:angular:stiffness
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: state:angular:physics:position
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: state:angular:physics:velocity
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: invisible
+
+NODE: /World/forklift_c/right_rotator_joint
+TYPE: PhysicsRevoluteJoint
+  ATTRIBUTE: drive:angular:physics:damping
+    TYPE: float
+    VALUE: 1000.0
+  ATTRIBUTE: drive:angular:physics:maxForce
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: drive:angular:physics:stiffness
+    TYPE: float
+    VALUE: 10000000.0
+  ATTRIBUTE: drive:angular:physics:targetPosition
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:targetVelocity
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:angular:physics:type
+    TYPE: token
+    VALUE: force
+  ATTRIBUTE: isaac:actuator
+    TYPE: bool[]
+    VALUE: [0, 0, 0, 0, 0, 0]
+  ATTRIBUTE: isaac:NameOverride
+    TYPE: string
+    VALUE: 
+  ATTRIBUTE: isaac:nameOverride
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: isaac:physics:AccelerationLimit
+    TYPE: float[]
+    VALUE: [-1, -1, -1, -1, -1, -1]
+  ATTRIBUTE: isaac:physics:JerkLimit
+    TYPE: float[]
+    VALUE: [-1, -1, -1, -1, -1, -1, -1]
+  ATTRIBUTE: isaac:physics:Rot_X:DoFOffset
+    TYPE: int
+    VALUE: 0
+  ATTRIBUTE: isaac:physics:Rot_X:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Rot_Y:DoFOffset
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: isaac:physics:Rot_Y:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Rot_Z:DoFOffset
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: isaac:physics:Rot_Z:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_X:DoFOffset
+    TYPE: int
+    VALUE: 3
+  ATTRIBUTE: isaac:physics:Tr_X:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_Y:DoFOffset
+    TYPE: int
+    VALUE: 4
+  ATTRIBUTE: isaac:physics:Tr_Y:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_Z:DoFOffset
+    TYPE: int
+    VALUE: 5
+  ATTRIBUTE: isaac:physics:Tr_Z:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: physics:axis
+    TYPE: token
+    VALUE: Z
+  ATTRIBUTE: physics:breakForce
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physics:breakTorque
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physics:collisionEnabled
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: physics:excludeFromArticulation
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: physics:jointEnabled
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: physics:localPos0
+    TYPE: point3f
+    VALUE: (-138.5914, -40.6132, 21.02286)
+  ATTRIBUTE: physics:localPos1
+    TYPE: point3f
+    VALUE: (-138.5914, -40.6132, 21.02286)
+  ATTRIBUTE: physics:localRot0
+    TYPE: quatf
+    VALUE: (0.70710677, 0, 0, 0.70710677)
+  ATTRIBUTE: physics:localRot1
+    TYPE: quatf
+    VALUE: (0.70710677, 0, 0, 0.70710677)
+  ATTRIBUTE: physics:lowerLimit
+    TYPE: float
+    VALUE: -45.0
+  ATTRIBUTE: physics:upperLimit
+    TYPE: float
+    VALUE: 45.0
+  ATTRIBUTE: physxLimit:angular:bounceThreshold
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: physxLimit:angular:damping
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: physxLimit:angular:restitution
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: physxLimit:angular:stiffness
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: state:angular:physics:position
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: state:angular:physics:velocity
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: invisible
+
+NODE: /World/forklift_c/lift_joint
+TYPE: PhysicsPrismaticJoint
+  ATTRIBUTE: drive:linear:physics:damping
+    TYPE: float
+    VALUE: 10000.0
+  ATTRIBUTE: drive:linear:physics:maxForce
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: drive:linear:physics:stiffness
+    TYPE: float
+    VALUE: 100000.0
+  ATTRIBUTE: drive:linear:physics:targetPosition
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:linear:physics:targetVelocity
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: drive:linear:physics:type
+    TYPE: token
+    VALUE: force
+  ATTRIBUTE: isaac:actuator
+    TYPE: bool[]
+    VALUE: [0, 0, 0, 0, 0, 0]
+  ATTRIBUTE: isaac:NameOverride
+    TYPE: string
+    VALUE: 
+  ATTRIBUTE: isaac:nameOverride
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: isaac:physics:AccelerationLimit
+    TYPE: float[]
+    VALUE: [-1, -1, -1, -1, -1, -1]
+  ATTRIBUTE: isaac:physics:JerkLimit
+    TYPE: float[]
+    VALUE: [-1, -1, -1, -1, -1, -1, -1]
+  ATTRIBUTE: isaac:physics:Rot_X:DoFOffset
+    TYPE: int
+    VALUE: 0
+  ATTRIBUTE: isaac:physics:Rot_X:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Rot_Y:DoFOffset
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: isaac:physics:Rot_Y:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Rot_Z:DoFOffset
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: isaac:physics:Rot_Z:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_X:DoFOffset
+    TYPE: int
+    VALUE: 3
+  ATTRIBUTE: isaac:physics:Tr_X:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_Y:DoFOffset
+    TYPE: int
+    VALUE: 4
+  ATTRIBUTE: isaac:physics:Tr_Y:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: isaac:physics:Tr_Z:DoFOffset
+    TYPE: int
+    VALUE: 5
+  ATTRIBUTE: isaac:physics:Tr_Z:DofOffset
+    TYPE: int
+    VALUE: None
+  ATTRIBUTE: physics:axis
+    TYPE: token
+    VALUE: Z
+  ATTRIBUTE: physics:breakForce
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physics:breakTorque
+    TYPE: float
+    VALUE: inf
+  ATTRIBUTE: physics:collisionEnabled
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: physics:excludeFromArticulation
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: physics:jointEnabled
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: physics:localPos0
+    TYPE: point3f
+    VALUE: (0, 0, 0)
+  ATTRIBUTE: physics:localPos1
+    TYPE: point3f
+    VALUE: (0, 0, 0)
+  ATTRIBUTE: physics:localRot0
+    TYPE: quatf
+    VALUE: (0.70710677, 0, 0, 0.70710677)
+  ATTRIBUTE: physics:localRot1
+    TYPE: quatf
+    VALUE: (0.70710677, 0, 0, 0.70710677)
+  ATTRIBUTE: physics:lowerLimit
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: physics:upperLimit
+    TYPE: float
+    VALUE: 2.0
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: state:linear:physics:position
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: state:linear:physics:velocity
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: invisible
+
+NODE: /World/forklift_c/body/ros2_sensors
+TYPE: Xform
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: inherited
+  ATTRIBUTE: xformOp:orient
+    TYPE: quatd
+    VALUE: (1, 0, 0, 0)
+  ATTRIBUTE: xformOp:scale
+    TYPE: double3
+    VALUE: (1, 1, 1)
+  ATTRIBUTE: xformOp:translate
+    TYPE: double3
+    VALUE: (-80.91216843065477, 7.396539769116217, 60.050654437375506)
+  ATTRIBUTE: xformOpOrder
+    TYPE: token[]
+    VALUE: [xformOp:translate, xformOp:orient, xformOp:scale]
+
+NODE: /World/forklift_c/body/sensors/front_hawk_left/right/camera_right
+TYPE: Camera
+  ATTRIBUTE: cameraProjectionType
+    TYPE: token
+    VALUE: fisheyePolynomial
+  ATTRIBUTE: clippingPlanes
+    TYPE: float4[]
+    VALUE: []
+  ATTRIBUTE: clippingRange
+    TYPE: float2
+    VALUE: (0.076, 100000)
+  ATTRIBUTE: exposure
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: focalLength
+    TYPE: float
+    VALUE: 2.8779797554016113
+  ATTRIBUTE: focusDistance
+    TYPE: float
+    VALUE: 0.6000000238418579
+  ATTRIBUTE: fStop
+    TYPE: float
+    VALUE: 240.0
+  ATTRIBUTE: fthetaCx
+    TYPE: float
+    VALUE: 954.709228515625
+  ATTRIBUTE: fthetaCy
+    TYPE: float
+    VALUE: 588.3735961914062
+  ATTRIBUTE: fthetaHeight
+    TYPE: float
+    VALUE: 1200.0
+  ATTRIBUTE: fthetaMaxFov
+    TYPE: float
+    VALUE: 150.0
+  ATTRIBUTE: fthetaPolyA
+    TYPE: float
+    VALUE: 8.962746505858377e-05
+  ATTRIBUTE: fthetaPolyB
+    TYPE: float
+    VALUE: 0.001039923052303493
+  ATTRIBUTE: fthetaPolyC
+    TYPE: float
+    VALUE: 1.502240820627776e-08
+  ATTRIBUTE: fthetaPolyD
+    TYPE: float
+    VALUE: 5.982795422271314e-12
+  ATTRIBUTE: fthetaPolyE
+    TYPE: float
+    VALUE: 3.6818906078281075e-14
+  ATTRIBUTE: fthetaWidth
+    TYPE: float
+    VALUE: 1920.0
+  ATTRIBUTE: horizontalAperture
+    TYPE: float
+    VALUE: 5.760000228881836
+  ATTRIBUTE: horizontalApertureOffset
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: omni:kit:cameraLock
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: physicalDistortionCoefficients
+    TYPE: float[]
+    VALUE: [6.815791, 5.172144, -0.000246, -0.000128, 0.353267, 7.180808, 7.640372, 1.596375]
+  ATTRIBUTE: physicalDistortionModel
+    TYPE: string
+    VALUE: rational_polynomial
+  ATTRIBUTE: projection
+    TYPE: token
+    VALUE: perspective
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: shutter:close
+    TYPE: double
+    VALUE: 0.0
+  ATTRIBUTE: shutter:open
+    TYPE: double
+    VALUE: 0.0
+  ATTRIBUTE: stereoRole
+    TYPE: token
+    VALUE: right
+  ATTRIBUTE: verticalAperture
+    TYPE: float
+    VALUE: 3.5999999046325684
+  ATTRIBUTE: verticalApertureOffset
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: inherited
+  ATTRIBUTE: xformOp:orient
+    TYPE: quatd
+    VALUE: (0.5, 0.5, -0.5, -0.5)
+  ATTRIBUTE: xformOp:scale
+    TYPE: double3
+    VALUE: (1, 1, 1)
+  ATTRIBUTE: xformOp:translate
+    TYPE: double3
+    VALUE: (0, 0, 0)
+  ATTRIBUTE: xformOpOrder
+    TYPE: token[]
+    VALUE: [xformOp:translate, xformOp:orient, xformOp:scale]
+
+NODE: /World/forklift_c/body/sensors/front_hawk_left/left/camera_left
+TYPE: Camera
+  ATTRIBUTE: cameraProjectionType
+    TYPE: token
+    VALUE: fisheyePolynomial
+  ATTRIBUTE: clippingPlanes
+    TYPE: float4[]
+    VALUE: []
+  ATTRIBUTE: clippingRange
+    TYPE: float2
+    VALUE: (0.076, 100000)
+  ATTRIBUTE: exposure
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: focalLength
+    TYPE: float
+    VALUE: 2.8734347820281982
+  ATTRIBUTE: focusDistance
+    TYPE: float
+    VALUE: 0.6000000238418579
+  ATTRIBUTE: fStop
+    TYPE: float
+    VALUE: 240.0
+  ATTRIBUTE: fthetaCx
+    TYPE: float
+    VALUE: 957.85107421875
+  ATTRIBUTE: fthetaCy
+    TYPE: float
+    VALUE: 589.5376586914062
+  ATTRIBUTE: fthetaHeight
+    TYPE: float
+    VALUE: 1200.0
+  ATTRIBUTE: fthetaMaxFov
+    TYPE: float
+    VALUE: 150.0
+  ATTRIBUTE: fthetaPolyA
+    TYPE: float
+    VALUE: 5.0055230531143025e-05
+  ATTRIBUTE: fthetaPolyB
+    TYPE: float
+    VALUE: 0.0010426010703667998
+  ATTRIBUTE: fthetaPolyC
+    TYPE: float
+    VALUE: 9.85131620723223e-09
+  ATTRIBUTE: fthetaPolyD
+    TYPE: float
+    VALUE: 1.6426542417957712e-11
+  ATTRIBUTE: fthetaPolyE
+    TYPE: float
+    VALUE: 2.9886398802796144e-14
+  ATTRIBUTE: fthetaWidth
+    TYPE: float
+    VALUE: 1920.0
+  ATTRIBUTE: horizontalAperture
+    TYPE: float
+    VALUE: 5.760000228881836
+  ATTRIBUTE: horizontalApertureOffset
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: omni:kit:cameraLock
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: physicalDistortionCoefficients
+    TYPE: float[]
+    VALUE: [0.147811, -0.032313, -0.000194, -0.000035, 0.008823, 0.517913, -0.06708, 0.01695]
+  ATTRIBUTE: physicalDistortionModel
+    TYPE: string
+    VALUE: rational_polynomial
+  ATTRIBUTE: projection
+    TYPE: token
+    VALUE: perspective
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: shutter:close
+    TYPE: double
+    VALUE: 0.0
+  ATTRIBUTE: shutter:open
+    TYPE: double
+    VALUE: 0.0
+  ATTRIBUTE: stereoRole
+    TYPE: token
+    VALUE: left
+  ATTRIBUTE: verticalAperture
+    TYPE: float
+    VALUE: 3.5999999046325684
+  ATTRIBUTE: verticalApertureOffset
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: inherited
+  ATTRIBUTE: xformOp:orient
+    TYPE: quatd
+    VALUE: (0.5, 0.5, -0.5, -0.5)
+  ATTRIBUTE: xformOp:scale
+    TYPE: double3
+    VALUE: (1, 1, 1)
+  ATTRIBUTE: xformOp:translate
+    TYPE: double3
+    VALUE: (0, 0, 0)
+  ATTRIBUTE: xformOpOrder
+    TYPE: token[]
+    VALUE: [xformOp:translate, xformOp:orient, xformOp:scale]
+
+NODE: /World/forklift_c/body/sensors/front_hawk_left/Imu
+TYPE: Xform
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: inherited
+  ATTRIBUTE: xformOp:orient
+    TYPE: quatd
+    VALUE: (1, 0, 0, 0)
+  ATTRIBUTE: xformOp:scale
+    TYPE: double3
+    VALUE: (1, 1, 1)
+  ATTRIBUTE: xformOp:translate
+    TYPE: double3
+    VALUE: (0, 0, 0)
+  ATTRIBUTE: xformOpOrder
+    TYPE: token[]
+    VALUE: [xformOp:translate, xformOp:orient, xformOp:scale]
+
+NODE: /World/forklift_c/body/sensors/front_hawk_left/Imu/Imu_Sensor
+TYPE: IsaacImuSensor
+  ATTRIBUTE: angularVelocityFilterWidth
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: enabled
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: linearAccelerationFilterWidth
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: orientationFilterWidth
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: sensorPeriod
+    TYPE: float
+    VALUE: -1.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: inherited
+  ATTRIBUTE: visualize
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: xformOp:orient
+    TYPE: quatd
+    VALUE: (0.7071067811865476, 0, 0.7071067811865475, 0)
+  ATTRIBUTE: xformOp:scale
+    TYPE: double3
+    VALUE: (1, 1, 1)
+  ATTRIBUTE: xformOp:translate
+    TYPE: double3
+    VALUE: (0, -0.0947, 0.0061)
+  ATTRIBUTE: xformOpOrder
+    TYPE: token[]
+    VALUE: [xformOp:translate, xformOp:orient, xformOp:scale]
+
+NODE: /World/forklift_c/body/sensors/front_hawk_right/right/camera_right
+TYPE: Camera
+  ATTRIBUTE: cameraProjectionType
+    TYPE: token
+    VALUE: fisheyePolynomial
+  ATTRIBUTE: clippingPlanes
+    TYPE: float4[]
+    VALUE: []
+  ATTRIBUTE: clippingRange
+    TYPE: float2
+    VALUE: (0.076, 100000)
+  ATTRIBUTE: exposure
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: focalLength
+    TYPE: float
+    VALUE: 2.8779797554016113
+  ATTRIBUTE: focusDistance
+    TYPE: float
+    VALUE: 0.6000000238418579
+  ATTRIBUTE: fStop
+    TYPE: float
+    VALUE: 240.0
+  ATTRIBUTE: fthetaCx
+    TYPE: float
+    VALUE: 954.709228515625
+  ATTRIBUTE: fthetaCy
+    TYPE: float
+    VALUE: 588.3735961914062
+  ATTRIBUTE: fthetaHeight
+    TYPE: float
+    VALUE: 1200.0
+  ATTRIBUTE: fthetaMaxFov
+    TYPE: float
+    VALUE: 150.0
+  ATTRIBUTE: fthetaPolyA
+    TYPE: float
+    VALUE: 8.962746505858377e-05
+  ATTRIBUTE: fthetaPolyB
+    TYPE: float
+    VALUE: 0.001039923052303493
+  ATTRIBUTE: fthetaPolyC
+    TYPE: float
+    VALUE: 1.502240820627776e-08
+  ATTRIBUTE: fthetaPolyD
+    TYPE: float
+    VALUE: 5.982795422271314e-12
+  ATTRIBUTE: fthetaPolyE
+    TYPE: float
+    VALUE: 3.6818906078281075e-14
+  ATTRIBUTE: fthetaWidth
+    TYPE: float
+    VALUE: 1920.0
+  ATTRIBUTE: horizontalAperture
+    TYPE: float
+    VALUE: 5.760000228881836
+  ATTRIBUTE: horizontalApertureOffset
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: omni:kit:cameraLock
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: physicalDistortionCoefficients
+    TYPE: float[]
+    VALUE: [6.815791, 5.172144, -0.000246, -0.000128, 0.353267, 7.180808, 7.640372, 1.596375]
+  ATTRIBUTE: physicalDistortionModel
+    TYPE: string
+    VALUE: rational_polynomial
+  ATTRIBUTE: projection
+    TYPE: token
+    VALUE: perspective
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: shutter:close
+    TYPE: double
+    VALUE: 0.0
+  ATTRIBUTE: shutter:open
+    TYPE: double
+    VALUE: 0.0
+  ATTRIBUTE: stereoRole
+    TYPE: token
+    VALUE: right
+  ATTRIBUTE: verticalAperture
+    TYPE: float
+    VALUE: 3.5999999046325684
+  ATTRIBUTE: verticalApertureOffset
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: inherited
+  ATTRIBUTE: xformOp:orient
+    TYPE: quatd
+    VALUE: (0.5, 0.5, -0.5, -0.5)
+  ATTRIBUTE: xformOp:scale
+    TYPE: double3
+    VALUE: (1, 1, 1)
+  ATTRIBUTE: xformOp:translate
+    TYPE: double3
+    VALUE: (0, 0, 0)
+  ATTRIBUTE: xformOpOrder
+    TYPE: token[]
+    VALUE: [xformOp:translate, xformOp:orient, xformOp:scale]
+
+NODE: /World/forklift_c/body/sensors/front_hawk_right/left/camera_left
+TYPE: Camera
+  ATTRIBUTE: cameraProjectionType
+    TYPE: token
+    VALUE: fisheyePolynomial
+  ATTRIBUTE: clippingPlanes
+    TYPE: float4[]
+    VALUE: []
+  ATTRIBUTE: clippingRange
+    TYPE: float2
+    VALUE: (0.076, 100000)
+  ATTRIBUTE: exposure
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: focalLength
+    TYPE: float
+    VALUE: 2.8734347820281982
+  ATTRIBUTE: focusDistance
+    TYPE: float
+    VALUE: 0.6000000238418579
+  ATTRIBUTE: fStop
+    TYPE: float
+    VALUE: 240.0
+  ATTRIBUTE: fthetaCx
+    TYPE: float
+    VALUE: 957.85107421875
+  ATTRIBUTE: fthetaCy
+    TYPE: float
+    VALUE: 589.5376586914062
+  ATTRIBUTE: fthetaHeight
+    TYPE: float
+    VALUE: 1200.0
+  ATTRIBUTE: fthetaMaxFov
+    TYPE: float
+    VALUE: 150.0
+  ATTRIBUTE: fthetaPolyA
+    TYPE: float
+    VALUE: 5.0055230531143025e-05
+  ATTRIBUTE: fthetaPolyB
+    TYPE: float
+    VALUE: 0.0010426010703667998
+  ATTRIBUTE: fthetaPolyC
+    TYPE: float
+    VALUE: 9.85131620723223e-09
+  ATTRIBUTE: fthetaPolyD
+    TYPE: float
+    VALUE: 1.6426542417957712e-11
+  ATTRIBUTE: fthetaPolyE
+    TYPE: float
+    VALUE: 2.9886398802796144e-14
+  ATTRIBUTE: fthetaWidth
+    TYPE: float
+    VALUE: 1920.0
+  ATTRIBUTE: horizontalAperture
+    TYPE: float
+    VALUE: 5.760000228881836
+  ATTRIBUTE: horizontalApertureOffset
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: omni:kit:cameraLock
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: physicalDistortionCoefficients
+    TYPE: float[]
+    VALUE: [0.147811, -0.032313, -0.000194, -0.000035, 0.008823, 0.517913, -0.06708, 0.01695]
+  ATTRIBUTE: physicalDistortionModel
+    TYPE: string
+    VALUE: rational_polynomial
+  ATTRIBUTE: projection
+    TYPE: token
+    VALUE: perspective
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: shutter:close
+    TYPE: double
+    VALUE: 0.0
+  ATTRIBUTE: shutter:open
+    TYPE: double
+    VALUE: 0.0
+  ATTRIBUTE: stereoRole
+    TYPE: token
+    VALUE: left
+  ATTRIBUTE: verticalAperture
+    TYPE: float
+    VALUE: 3.5999999046325684
+  ATTRIBUTE: verticalApertureOffset
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: inherited
+  ATTRIBUTE: xformOp:orient
+    TYPE: quatd
+    VALUE: (0.5, 0.5, -0.5, -0.5)
+  ATTRIBUTE: xformOp:scale
+    TYPE: double3
+    VALUE: (1, 1, 1)
+  ATTRIBUTE: xformOp:translate
+    TYPE: double3
+    VALUE: (0, 0, 0)
+  ATTRIBUTE: xformOpOrder
+    TYPE: token[]
+    VALUE: [xformOp:translate, xformOp:orient, xformOp:scale]
+
+NODE: /World/forklift_c/body/sensors/front_hawk_right/Imu
+TYPE: Xform
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: inherited
+  ATTRIBUTE: xformOp:orient
+    TYPE: quatd
+    VALUE: (1, 0, 0, 0)
+  ATTRIBUTE: xformOp:scale
+    TYPE: double3
+    VALUE: (1, 1, 1)
+  ATTRIBUTE: xformOp:translate
+    TYPE: double3
+    VALUE: (0, 0, 0)
+  ATTRIBUTE: xformOpOrder
+    TYPE: token[]
+    VALUE: [xformOp:translate, xformOp:orient, xformOp:scale]
+
+NODE: /World/forklift_c/body/sensors/front_hawk_right/Imu/Imu_Sensor
+TYPE: IsaacImuSensor
+  ATTRIBUTE: angularVelocityFilterWidth
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: enabled
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: linearAccelerationFilterWidth
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: orientationFilterWidth
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: sensorPeriod
+    TYPE: float
+    VALUE: -1.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: inherited
+  ATTRIBUTE: visualize
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: xformOp:orient
+    TYPE: quatd
+    VALUE: (0.7071067811865476, 0, 0.7071067811865475, 0)
+  ATTRIBUTE: xformOp:scale
+    TYPE: double3
+    VALUE: (1, 1, 1)
+  ATTRIBUTE: xformOp:translate
+    TYPE: double3
+    VALUE: (0, -0.0947, 0.0061)
+  ATTRIBUTE: xformOpOrder
+    TYPE: token[]
+    VALUE: [xformOp:translate, xformOp:orient, xformOp:scale]
+
+NODE: /World/forklift_c/forklift_main
+TYPE: OmniGraph
+  ATTRIBUTE: allowAutoInstancing
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: evaluationMode
+    TYPE: token
+    VALUE: Automatic
+  ATTRIBUTE: evaluator:type
+    TYPE: token
+    VALUE: execution
+  ATTRIBUTE: fabricCacheBacking
+    TYPE: token
+    VALUE: Shared
+  ATTRIBUTE: fileFormatVersion
+    TYPE: int2
+    VALUE: (1, 9)
+  ATTRIBUTE: pipelineStage
+    TYPE: token
+    VALUE: pipelineStageSimulation
+
+NODE: /World/forklift_c/forklift_main/on_playback_tick
+TYPE: OmniGraphNode
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: omni.graph.action.OnPlaybackTick
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: outputs:deltaSeconds
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: outputs:frame
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: outputs:tick
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: outputs:time
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-14.111138, 176.62158)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/forklift_main/ros2_context
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:domain_id
+    TYPE: uchar
+    VALUE: None
+  ATTRIBUTE: inputs:useDomainIDEnvVar
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2Context
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: outputs:context
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (3.2069216, 366.76965)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/forklift_main/ros2_qos_profile
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:createProfile
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: inputs:deadline
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: inputs:depth
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: inputs:durability
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: inputs:history
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: inputs:leaseDuration
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: inputs:lifespan
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: inputs:liveliness
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: inputs:reliability
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2QoSProfile
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: outputs:qosProfile
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (13.596643, 530.1692)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:context
+    TYPE: uint64
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/ros2_context.outputs:context
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+  ATTRIBUTE: inputs:nodeNamespace
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: inputs:qosProfile
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/ros2_qos_profile.outputs:qosProfile
+  ATTRIBUTE: inputs:queueSize
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: inputs:topicName
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2SubscribeAckermannDrive
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: outputs:acceleration
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: outputs:execOut
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: outputs:frameId
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: outputs:jerk
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: outputs:speed
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: outputs:steeringAngle
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: outputs:steeringAngleVelocity
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: outputs:timeStamp
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (315.27673, 377.10052)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/forklift_main/ackermann_controller
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:acceleration
+    TYPE: double
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive.outputs:acceleration
+  ATTRIBUTE: inputs:backWheelRadius
+    TYPE: double
+    VALUE: 0.255
+  ATTRIBUTE: inputs:dt
+    TYPE: double
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/on_playback_tick.outputs:deltaSeconds
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+  ATTRIBUTE: inputs:frontWheelRadius
+    TYPE: double
+    VALUE: 0.255
+  ATTRIBUTE: inputs:invertSteering
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: inputs:maxAcceleration
+    TYPE: double
+    VALUE: 1.0
+  ATTRIBUTE: inputs:maxSteeringAngleVelocity
+    TYPE: double
+    VALUE: 1.0
+  ATTRIBUTE: inputs:maxWheelRotation
+    TYPE: double
+    VALUE: 0.69813
+  ATTRIBUTE: inputs:maxWheelVelocity
+    TYPE: double
+    VALUE: 20.0
+  ATTRIBUTE: inputs:speed
+    TYPE: double
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive.outputs:speed
+  ATTRIBUTE: inputs:steeringAngle
+    TYPE: double
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive.outputs:steeringAngle
+  ATTRIBUTE: inputs:steeringAngleVelocity
+    TYPE: double
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive.outputs:steeringAngleVelocity
+  ATTRIBUTE: inputs:trackWidth
+    TYPE: double
+    VALUE: 0.82
+  ATTRIBUTE: inputs:wheelBase
+    TYPE: double
+    VALUE: 1.65
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.robot.wheeled_robots.AckermannController
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: outputs:execOut
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: outputs:wheelAngles
+    TYPE: double[]
+    VALUE: None
+  ATTRIBUTE: outputs:wheelRotationVelocity
+    TYPE: double[]
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (695.81616, 347.60703)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/forklift_main/articulation_controller
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:effortCommand
+    TYPE: double[]
+    VALUE: None
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+  ATTRIBUTE: inputs:jointIndices
+    TYPE: int[]
+    VALUE: None
+  ATTRIBUTE: inputs:jointNames
+    TYPE: token[]
+    VALUE: [left_rotator_joint, right_rotator_joint]
+  ATTRIBUTE: inputs:positionCommand
+    TYPE: double[]
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/ackermann_controller.outputs:wheelAngles
+  ATTRIBUTE: inputs:robotPath
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: inputs:velocityCommand
+    TYPE: double[]
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.core.nodes.IsaacArticulationController
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (1036.2306, 73.42404)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/forklift_main/articulation_controller_01
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:effortCommand
+    TYPE: double[]
+    VALUE: None
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+  ATTRIBUTE: inputs:jointIndices
+    TYPE: int[]
+    VALUE: None
+  ATTRIBUTE: inputs:jointNames
+    TYPE: token[]
+    VALUE: [left_back_wheel_joint, right_back_wheel_joint]
+  ATTRIBUTE: inputs:positionCommand
+    TYPE: double[]
+    VALUE: None
+  ATTRIBUTE: inputs:robotPath
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: inputs:velocityCommand
+    TYPE: double[]
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/get_array_slice.outputs:array
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.core.nodes.IsaacArticulationController
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (1297.3134, 364.78098)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/forklift_main/get_array_slice
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:array
+    TYPE: token
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/ackermann_controller.outputs:wheelRotationVelocity
+  ATTRIBUTE: inputs:end
+    TYPE: int
+    VALUE: 3
+  ATTRIBUTE: inputs:start
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: inputs:useLength
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: omni.graph.nodes.ArraySlice
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: outputs:array
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (1024.3125, 493.9277)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/forklift_main/articulation_controller_02
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:effortCommand
+    TYPE: double[]
+    VALUE: None
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+  ATTRIBUTE: inputs:jointIndices
+    TYPE: int[]
+    VALUE: None
+  ATTRIBUTE: inputs:jointNames
+    TYPE: token[]
+    VALUE: [lift_joint]
+  ATTRIBUTE: inputs:positionCommand
+    TYPE: double[]
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/make_array.outputs:array
+      -> /World/forklift_c/forklift_main/ros2_subscribe_joint_state.outputs:positionCommand
+  ATTRIBUTE: inputs:robotPath
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: inputs:velocityCommand
+    TYPE: double[]
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.core.nodes.IsaacArticulationController
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (1262.7842, 789.4247)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/forklift_main/ros2_subscribe_joint_state
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:context
+    TYPE: uint64
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/ros2_context.outputs:context
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+  ATTRIBUTE: inputs:nodeNamespace
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: inputs:qosProfile
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/forklift_main/ros2_qos_profile.outputs:qosProfile
+  ATTRIBUTE: inputs:queueSize
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: inputs:topicName
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2SubscribeJointState
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: outputs:effortCommand
+    TYPE: double[]
+    VALUE: None
+  ATTRIBUTE: outputs:execOut
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: outputs:jointNames
+    TYPE: token[]
+    VALUE: None
+  ATTRIBUTE: outputs:positionCommand
+    TYPE: double[]
+    VALUE: None
+  ATTRIBUTE: outputs:timeStamp
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: outputs:velocityCommand
+    TYPE: double[]
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (304.07898, 760.76855)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left
+TYPE: OmniGraph
+  ATTRIBUTE: allowAutoInstancing
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: evaluationMode
+    TYPE: token
+    VALUE: Automatic
+  ATTRIBUTE: evaluator:type
+    TYPE: token
+    VALUE: execution
+  ATTRIBUTE: fabricCacheBacking
+    TYPE: token
+    VALUE: Shared
+  ATTRIBUTE: fileFormatVersion
+    TYPE: int2
+    VALUE: (1, 9)
+  ATTRIBUTE: pipelineStage
+    TYPE: token
+    VALUE: pipelineStageSimulation
+
+NODE: /World/forklift_c/front_hawk_left/on_playback_tick
+TYPE: OmniGraphNode
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: omni.graph.action.OnPlaybackTick
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: outputs:deltaSeconds
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: outputs:frame
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: outputs:tick
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: outputs:time
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left/ros2_context
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:domain_id
+    TYPE: uchar
+    VALUE: None
+  ATTRIBUTE: inputs:useDomainIDEnvVar
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2Context
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: outputs:context
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-548.806, 233.12393)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left/left_camera_render_product
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:enabled
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/isaac_run_one_simualtion_frame.outputs:step
+  ATTRIBUTE: inputs:height
+    TYPE: uint
+    VALUE: 1200
+  ATTRIBUTE: inputs:width
+    TYPE: uint
+    VALUE: 1920
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.core.nodes.IsaacCreateRenderProduct
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: outputs:execOut
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: outputs:renderProductPath
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left/right_camera_render_product
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:enabled
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/isaac_run_one_simualtion_frame.outputs:step
+  ATTRIBUTE: inputs:height
+    TYPE: uint
+    VALUE: 1200
+  ATTRIBUTE: inputs:width
+    TYPE: uint
+    VALUE: 1920
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.core.nodes.IsaacCreateRenderProduct
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: outputs:execOut
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: outputs:renderProductPath
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-528.1756, -770.3036)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left/left_camera_publish_image
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:context
+    TYPE: uint64
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/ros2_context.outputs:context
+  ATTRIBUTE: inputs:enabled
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:enableSemanticLabels
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/left_camera_render_product.outputs:execOut
+  ATTRIBUTE: inputs:frameId
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/left_camera_frame_id.inputs:value
+  ATTRIBUTE: inputs:frameSkipCount
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: inputs:nodeNamespace
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/camera_namespace.inputs:value
+  ATTRIBUTE: inputs:qosProfile
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/ros2_qos_profile.outputs:qosProfile
+  ATTRIBUTE: inputs:queueSize
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: inputs:renderProductPath
+    TYPE: token
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/left_camera_render_product.outputs:renderProductPath
+  ATTRIBUTE: inputs:resetSimulationTimeOnStop
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: inputs:semanticLabelsTopicName
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: inputs:stereoOffset
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: inputs:topicName
+    TYPE: string
+    VALUE: left/image_raw
+  ATTRIBUTE: inputs:type
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: inputs:useSystemTime
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:viewport
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2CameraHelper
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left/right_camera_publish_image
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:context
+    TYPE: uint64
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/ros2_context.outputs:context
+  ATTRIBUTE: inputs:enabled
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:enableSemanticLabels
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/right_camera_render_product.outputs:execOut
+  ATTRIBUTE: inputs:frameId
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/right_camera_frame_id.inputs:value
+  ATTRIBUTE: inputs:frameSkipCount
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: inputs:nodeNamespace
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/camera_namespace.inputs:value
+  ATTRIBUTE: inputs:qosProfile
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/ros2_qos_profile.outputs:qosProfile
+  ATTRIBUTE: inputs:queueSize
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: inputs:renderProductPath
+    TYPE: token
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/right_camera_render_product.outputs:renderProductPath
+  ATTRIBUTE: inputs:resetSimulationTimeOnStop
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: inputs:semanticLabelsTopicName
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: inputs:stereoOffset
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: inputs:topicName
+    TYPE: string
+    VALUE: right/image_raw
+  ATTRIBUTE: inputs:type
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: inputs:useSystemTime
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:viewport
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2CameraHelper
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-114.94742, -625.06104)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left/right_camera_frame_id
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:value
+    TYPE: string
+    VALUE: front_stereo_camera_right_optical
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: omni.graph.nodes.ConstantString
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-529.43665, -58.517902)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left/left_camera_frame_id
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:value
+    TYPE: string
+    VALUE: front_stereo_camera_left_optical
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: omni.graph.nodes.ConstantString
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left/isaac_read_imu_node
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/on_playback_tick.outputs:tick
+  ATTRIBUTE: inputs:readGravity
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:useLatestData
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.sensors.physics.IsaacReadIMU
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: outputs:angVel
+    TYPE: vector3d
+    VALUE: None
+  ATTRIBUTE: outputs:execOut
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: outputs:linAcc
+    TYPE: vector3d
+    VALUE: None
+  ATTRIBUTE: outputs:orientation
+    TYPE: quatd
+    VALUE: None
+  ATTRIBUTE: outputs:sensorTime
+    TYPE: float
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left/ros2_publish_imu
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:angularVelocity
+    TYPE: vector3d
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/isaac_read_imu_node.outputs:angVel
+  ATTRIBUTE: inputs:context
+    TYPE: uint64
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/ros2_context.outputs:context
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/isaac_read_imu_node.outputs:execOut
+  ATTRIBUTE: inputs:frameId
+    TYPE: string
+    VALUE: front_stereo_camera_imu
+  ATTRIBUTE: inputs:linearAcceleration
+    TYPE: vector3d
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/isaac_read_imu_node.outputs:linAcc
+  ATTRIBUTE: inputs:nodeNamespace
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: inputs:orientation
+    TYPE: quatd
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/isaac_read_imu_node.outputs:orientation
+  ATTRIBUTE: inputs:publishAngularVelocity
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:publishLinearAcceleration
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:publishOrientation
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:qosProfile
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/ros2_qos_profile.outputs:qosProfile
+  ATTRIBUTE: inputs:queueSize
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: inputs:timeStamp
+    TYPE: double
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/isaac_read_simulation_time.outputs:simulationTime
+  ATTRIBUTE: inputs:topicName
+    TYPE: string
+    VALUE: front_stereo_imu/imu
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2PublishImu
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-110.24004, -1006.2333)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left/isaac_run_one_simualtion_frame
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/on_playback_tick.outputs:tick
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.core.nodes.OgnIsaacRunOneSimulationFrame
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: outputs:step
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left/camera_namespace
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:value
+    TYPE: string
+    VALUE: /front_stereo_camera
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: omni.graph.nodes.ConstantString
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-542.76996, 78.26117)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left/ros2_camera_info_helper
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:context
+    TYPE: uint64
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/ros2_context.outputs:context
+  ATTRIBUTE: inputs:enabled
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/left_camera_render_product.outputs:execOut
+  ATTRIBUTE: inputs:frameId
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/left_camera_frame_id.inputs:value
+  ATTRIBUTE: inputs:frameIdRight
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/right_camera_frame_id.inputs:value
+  ATTRIBUTE: inputs:frameSkipCount
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: inputs:nodeNamespace
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/camera_namespace.inputs:value
+  ATTRIBUTE: inputs:qosProfile
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/ros2_qos_profile.outputs:qosProfile
+  ATTRIBUTE: inputs:queueSize
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: inputs:renderProductPath
+    TYPE: token
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/left_camera_render_product.outputs:renderProductPath
+  ATTRIBUTE: inputs:renderProductPathRight
+    TYPE: token
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_left/right_camera_render_product.outputs:renderProductPath
+  ATTRIBUTE: inputs:resetSimulationTimeOnStop
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:topicName
+    TYPE: string
+    VALUE: left/camera_info
+  ATTRIBUTE: inputs:topicNameRight
+    TYPE: string
+    VALUE: right/camera_info
+  ATTRIBUTE: inputs:useSystemTime
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2CameraInfoHelper
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left/ros2_qos_profile
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:createProfile
+    TYPE: token
+    VALUE: Default for publishers/subscribers
+  ATTRIBUTE: inputs:deadline
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: inputs:depth
+    TYPE: uint64
+    VALUE: 5
+  ATTRIBUTE: inputs:durability
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: inputs:history
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: inputs:leaseDuration
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: inputs:lifespan
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: inputs:liveliness
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: inputs:reliability
+    TYPE: token
+    VALUE: bestEffort
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2QoSProfile
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: outputs:qosProfile
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-552.7699, -291.1305)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_left/isaac_read_simulation_time
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:referenceTimeDenominator
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: inputs:referenceTimeNumerator
+    TYPE: int64
+    VALUE: None
+  ATTRIBUTE: inputs:resetOnStop
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.core.nodes.IsaacReadSimulationTime
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: outputs:simulationTime
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-558.0673, -527.5196)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right
+TYPE: OmniGraph
+  ATTRIBUTE: allowAutoInstancing
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: evaluationMode
+    TYPE: token
+    VALUE: Automatic
+  ATTRIBUTE: evaluator:type
+    TYPE: token
+    VALUE: execution
+  ATTRIBUTE: fabricCacheBacking
+    TYPE: token
+    VALUE: Shared
+  ATTRIBUTE: fileFormatVersion
+    TYPE: int2
+    VALUE: (1, 9)
+  ATTRIBUTE: pipelineStage
+    TYPE: token
+    VALUE: pipelineStageSimulation
+
+NODE: /World/forklift_c/front_hawk_right/on_playback_tick
+TYPE: OmniGraphNode
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: omni.graph.action.OnPlaybackTick
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: outputs:deltaSeconds
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: outputs:frame
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: outputs:tick
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: outputs:time
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right/ros2_context
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:domain_id
+    TYPE: uchar
+    VALUE: None
+  ATTRIBUTE: inputs:useDomainIDEnvVar
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2Context
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: outputs:context
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-548.806, 233.12393)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right/left_camera_render_product
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:enabled
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/isaac_run_one_simualtion_frame.outputs:step
+  ATTRIBUTE: inputs:height
+    TYPE: uint
+    VALUE: 1200
+  ATTRIBUTE: inputs:width
+    TYPE: uint
+    VALUE: 1920
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.core.nodes.IsaacCreateRenderProduct
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: outputs:execOut
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: outputs:renderProductPath
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right/right_camera_render_product
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:enabled
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/isaac_run_one_simualtion_frame.outputs:step
+  ATTRIBUTE: inputs:height
+    TYPE: uint
+    VALUE: 1200
+  ATTRIBUTE: inputs:width
+    TYPE: uint
+    VALUE: 1920
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.core.nodes.IsaacCreateRenderProduct
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: outputs:execOut
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: outputs:renderProductPath
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-528.1756, -770.3036)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right/left_camera_publish_image
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:context
+    TYPE: uint64
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/ros2_context.outputs:context
+  ATTRIBUTE: inputs:enabled
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:enableSemanticLabels
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/left_camera_render_product.outputs:execOut
+  ATTRIBUTE: inputs:frameId
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/left_camera_frame_id.inputs:value
+  ATTRIBUTE: inputs:frameSkipCount
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: inputs:nodeNamespace
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/camera_namespace.inputs:value
+  ATTRIBUTE: inputs:qosProfile
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/ros2_qos_profile.outputs:qosProfile
+  ATTRIBUTE: inputs:queueSize
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: inputs:renderProductPath
+    TYPE: token
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/left_camera_render_product.outputs:renderProductPath
+  ATTRIBUTE: inputs:resetSimulationTimeOnStop
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: inputs:semanticLabelsTopicName
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: inputs:stereoOffset
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: inputs:topicName
+    TYPE: string
+    VALUE: left/image_raw
+  ATTRIBUTE: inputs:type
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: inputs:useSystemTime
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:viewport
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2CameraHelper
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right/right_camera_publish_image
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:context
+    TYPE: uint64
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/ros2_context.outputs:context
+  ATTRIBUTE: inputs:enabled
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:enableSemanticLabels
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/right_camera_render_product.outputs:execOut
+  ATTRIBUTE: inputs:frameId
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/right_camera_frame_id.inputs:value
+  ATTRIBUTE: inputs:frameSkipCount
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: inputs:nodeNamespace
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/camera_namespace.inputs:value
+  ATTRIBUTE: inputs:qosProfile
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/ros2_qos_profile.outputs:qosProfile
+  ATTRIBUTE: inputs:queueSize
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: inputs:renderProductPath
+    TYPE: token
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/right_camera_render_product.outputs:renderProductPath
+  ATTRIBUTE: inputs:resetSimulationTimeOnStop
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: inputs:semanticLabelsTopicName
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: inputs:stereoOffset
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: inputs:topicName
+    TYPE: string
+    VALUE: right/image_raw
+  ATTRIBUTE: inputs:type
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: inputs:useSystemTime
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:viewport
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2CameraHelper
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 2
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-114.94742, -625.06104)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right/right_camera_frame_id
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:value
+    TYPE: string
+    VALUE: front_stereo_camera_right_optical
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: omni.graph.nodes.ConstantString
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-529.43665, -58.517902)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right/left_camera_frame_id
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:value
+    TYPE: string
+    VALUE: front_stereo_camera_left_optical
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: omni.graph.nodes.ConstantString
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right/isaac_read_imu_node
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/on_playback_tick.outputs:tick
+  ATTRIBUTE: inputs:readGravity
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:useLatestData
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.sensors.physics.IsaacReadIMU
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: outputs:angVel
+    TYPE: vector3d
+    VALUE: None
+  ATTRIBUTE: outputs:execOut
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: outputs:linAcc
+    TYPE: vector3d
+    VALUE: None
+  ATTRIBUTE: outputs:orientation
+    TYPE: quatd
+    VALUE: None
+  ATTRIBUTE: outputs:sensorTime
+    TYPE: float
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right/ros2_publish_imu
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:angularVelocity
+    TYPE: vector3d
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/isaac_read_imu_node.outputs:angVel
+  ATTRIBUTE: inputs:context
+    TYPE: uint64
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/ros2_context.outputs:context
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/isaac_read_imu_node.outputs:execOut
+  ATTRIBUTE: inputs:frameId
+    TYPE: string
+    VALUE: front_stereo_camera_imu
+  ATTRIBUTE: inputs:linearAcceleration
+    TYPE: vector3d
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/isaac_read_imu_node.outputs:linAcc
+  ATTRIBUTE: inputs:nodeNamespace
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: inputs:orientation
+    TYPE: quatd
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/isaac_read_imu_node.outputs:orientation
+  ATTRIBUTE: inputs:publishAngularVelocity
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:publishLinearAcceleration
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:publishOrientation
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:qosProfile
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/ros2_qos_profile.outputs:qosProfile
+  ATTRIBUTE: inputs:queueSize
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: inputs:timeStamp
+    TYPE: double
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/isaac_read_simulation_time.outputs:simulationTime
+  ATTRIBUTE: inputs:topicName
+    TYPE: string
+    VALUE: front_stereo_imu/imu
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2PublishImu
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-110.24004, -1006.2333)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right/isaac_run_one_simualtion_frame
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/on_playback_tick.outputs:tick
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.core.nodes.OgnIsaacRunOneSimulationFrame
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: outputs:step
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right/camera_namespace
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:value
+    TYPE: string
+    VALUE: /front_stereo_camera
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: omni.graph.nodes.ConstantString
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-542.76996, 78.26117)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right/ros2_camera_info_helper
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:context
+    TYPE: uint64
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/ros2_context.outputs:context
+  ATTRIBUTE: inputs:enabled
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:execIn
+    TYPE: uint
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/left_camera_render_product.outputs:execOut
+  ATTRIBUTE: inputs:frameId
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/left_camera_frame_id.inputs:value
+  ATTRIBUTE: inputs:frameIdRight
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/right_camera_frame_id.inputs:value
+  ATTRIBUTE: inputs:frameSkipCount
+    TYPE: uint
+    VALUE: None
+  ATTRIBUTE: inputs:nodeNamespace
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/camera_namespace.inputs:value
+  ATTRIBUTE: inputs:qosProfile
+    TYPE: string
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/ros2_qos_profile.outputs:qosProfile
+  ATTRIBUTE: inputs:queueSize
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: inputs:renderProductPath
+    TYPE: token
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/left_camera_render_product.outputs:renderProductPath
+  ATTRIBUTE: inputs:renderProductPathRight
+    TYPE: token
+    VALUE: None
+    CONNECTIONS:
+      -> /World/forklift_c/front_hawk_right/right_camera_render_product.outputs:renderProductPath
+  ATTRIBUTE: inputs:resetSimulationTimeOnStop
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: inputs:topicName
+    TYPE: string
+    VALUE: left/camera_info
+  ATTRIBUTE: inputs:topicNameRight
+    TYPE: string
+    VALUE: right/camera_info
+  ATTRIBUTE: inputs:useSystemTime
+    TYPE: bool
+    VALUE: None
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2CameraInfoHelper
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right/ros2_qos_profile
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:createProfile
+    TYPE: token
+    VALUE: Default for publishers/subscribers
+  ATTRIBUTE: inputs:deadline
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: inputs:depth
+    TYPE: uint64
+    VALUE: 5
+  ATTRIBUTE: inputs:durability
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: inputs:history
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: inputs:leaseDuration
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: inputs:lifespan
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: inputs:liveliness
+    TYPE: token
+    VALUE: None
+  ATTRIBUTE: inputs:reliability
+    TYPE: token
+    VALUE: bestEffort
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.ros2.bridge.ROS2QoSProfile
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: outputs:qosProfile
+    TYPE: string
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-552.7699, -291.1305)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /World/forklift_c/front_hawk_right/isaac_read_simulation_time
+TYPE: OmniGraphNode
+  ATTRIBUTE: inputs:referenceTimeDenominator
+    TYPE: uint64
+    VALUE: None
+  ATTRIBUTE: inputs:referenceTimeNumerator
+    TYPE: int64
+    VALUE: None
+  ATTRIBUTE: inputs:resetOnStop
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: node:type
+    TYPE: token
+    VALUE: isaacsim.core.nodes.IsaacReadSimulationTime
+  ATTRIBUTE: node:typeVersion
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: outputs:simulationTime
+    TYPE: double
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:displayColor
+    TYPE: color3f
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:expansionState
+    TYPE: token
+    VALUE: open
+  ATTRIBUTE: ui:nodegraph:node:icon
+    TYPE: asset
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:pos
+    TYPE: float2
+    VALUE: (-558.0673, -527.5196)
+  ATTRIBUTE: ui:nodegraph:node:size
+    TYPE: float2
+    VALUE: None
+  ATTRIBUTE: ui:nodegraph:node:stackingOrder
+    TYPE: int
+    VALUE: None
+
+NODE: /front_hawk_left/right/camera_right
+TYPE: Camera
+  ATTRIBUTE: cameraProjectionType
+    TYPE: token
+    VALUE: fisheyePolynomial
+  ATTRIBUTE: clippingPlanes
+    TYPE: float4[]
+    VALUE: []
+  ATTRIBUTE: clippingRange
+    TYPE: float2
+    VALUE: (0.076, 100000)
+  ATTRIBUTE: exposure
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: focalLength
+    TYPE: float
+    VALUE: 2.8779797554016113
+  ATTRIBUTE: focusDistance
+    TYPE: float
+    VALUE: 0.6000000238418579
+  ATTRIBUTE: fStop
+    TYPE: float
+    VALUE: 240.0
+  ATTRIBUTE: fthetaCx
+    TYPE: float
+    VALUE: 954.709228515625
+  ATTRIBUTE: fthetaCy
+    TYPE: float
+    VALUE: 588.3735961914062
+  ATTRIBUTE: fthetaHeight
+    TYPE: float
+    VALUE: 1200.0
+  ATTRIBUTE: fthetaMaxFov
+    TYPE: float
+    VALUE: 150.0
+  ATTRIBUTE: fthetaPolyA
+    TYPE: float
+    VALUE: 8.962746505858377e-05
+  ATTRIBUTE: fthetaPolyB
+    TYPE: float
+    VALUE: 0.001039923052303493
+  ATTRIBUTE: fthetaPolyC
+    TYPE: float
+    VALUE: 1.502240820627776e-08
+  ATTRIBUTE: fthetaPolyD
+    TYPE: float
+    VALUE: 5.982795422271314e-12
+  ATTRIBUTE: fthetaPolyE
+    TYPE: float
+    VALUE: 3.6818906078281075e-14
+  ATTRIBUTE: fthetaWidth
+    TYPE: float
+    VALUE: 1920.0
+  ATTRIBUTE: horizontalAperture
+    TYPE: float
+    VALUE: 5.760000228881836
+  ATTRIBUTE: horizontalApertureOffset
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: omni:kit:cameraLock
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: physicalDistortionCoefficients
+    TYPE: float[]
+    VALUE: [6.815791, 5.172144, -0.000246, -0.000128, 0.353267, 7.180808, 7.640372, 1.596375]
+  ATTRIBUTE: physicalDistortionModel
+    TYPE: string
+    VALUE: rational_polynomial
+  ATTRIBUTE: projection
+    TYPE: token
+    VALUE: perspective
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: shutter:close
+    TYPE: double
+    VALUE: 0.0
+  ATTRIBUTE: shutter:open
+    TYPE: double
+    VALUE: 0.0
+  ATTRIBUTE: stereoRole
+    TYPE: token
+    VALUE: right
+  ATTRIBUTE: verticalAperture
+    TYPE: float
+    VALUE: 3.5999999046325684
+  ATTRIBUTE: verticalApertureOffset
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: inherited
+  ATTRIBUTE: xformOp:orient
+    TYPE: quatd
+    VALUE: (0.5, 0.5, -0.5, -0.5)
+  ATTRIBUTE: xformOp:scale
+    TYPE: double3
+    VALUE: (1, 1, 1)
+  ATTRIBUTE: xformOp:translate
+    TYPE: double3
+    VALUE: (0, 0, 0)
+  ATTRIBUTE: xformOpOrder
+    TYPE: token[]
+    VALUE: [xformOp:translate, xformOp:orient, xformOp:scale]
+
+NODE: /front_hawk_left/left/camera_left
+TYPE: Camera
+  ATTRIBUTE: cameraProjectionType
+    TYPE: token
+    VALUE: fisheyePolynomial
+  ATTRIBUTE: clippingPlanes
+    TYPE: float4[]
+    VALUE: []
+  ATTRIBUTE: clippingRange
+    TYPE: float2
+    VALUE: (0.076, 100000)
+  ATTRIBUTE: exposure
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: focalLength
+    TYPE: float
+    VALUE: 2.8734347820281982
+  ATTRIBUTE: focusDistance
+    TYPE: float
+    VALUE: 0.6000000238418579
+  ATTRIBUTE: fStop
+    TYPE: float
+    VALUE: 240.0
+  ATTRIBUTE: fthetaCx
+    TYPE: float
+    VALUE: 957.85107421875
+  ATTRIBUTE: fthetaCy
+    TYPE: float
+    VALUE: 589.5376586914062
+  ATTRIBUTE: fthetaHeight
+    TYPE: float
+    VALUE: 1200.0
+  ATTRIBUTE: fthetaMaxFov
+    TYPE: float
+    VALUE: 150.0
+  ATTRIBUTE: fthetaPolyA
+    TYPE: float
+    VALUE: 5.0055230531143025e-05
+  ATTRIBUTE: fthetaPolyB
+    TYPE: float
+    VALUE: 0.0010426010703667998
+  ATTRIBUTE: fthetaPolyC
+    TYPE: float
+    VALUE: 9.85131620723223e-09
+  ATTRIBUTE: fthetaPolyD
+    TYPE: float
+    VALUE: 1.6426542417957712e-11
+  ATTRIBUTE: fthetaPolyE
+    TYPE: float
+    VALUE: 2.9886398802796144e-14
+  ATTRIBUTE: fthetaWidth
+    TYPE: float
+    VALUE: 1920.0
+  ATTRIBUTE: horizontalAperture
+    TYPE: float
+    VALUE: 5.760000228881836
+  ATTRIBUTE: horizontalApertureOffset
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: omni:kit:cameraLock
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: physicalDistortionCoefficients
+    TYPE: float[]
+    VALUE: [0.147811, -0.032313, -0.000194, -0.000035, 0.008823, 0.517913, -0.06708, 0.01695]
+  ATTRIBUTE: physicalDistortionModel
+    TYPE: string
+    VALUE: rational_polynomial
+  ATTRIBUTE: projection
+    TYPE: token
+    VALUE: perspective
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: shutter:close
+    TYPE: double
+    VALUE: 0.0
+  ATTRIBUTE: shutter:open
+    TYPE: double
+    VALUE: 0.0
+  ATTRIBUTE: stereoRole
+    TYPE: token
+    VALUE: left
+  ATTRIBUTE: verticalAperture
+    TYPE: float
+    VALUE: 3.5999999046325684
+  ATTRIBUTE: verticalApertureOffset
+    TYPE: float
+    VALUE: 0.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: inherited
+  ATTRIBUTE: xformOp:orient
+    TYPE: quatd
+    VALUE: (0.5, 0.5, -0.5, -0.5)
+  ATTRIBUTE: xformOp:scale
+    TYPE: double3
+    VALUE: (1, 1, 1)
+  ATTRIBUTE: xformOp:translate
+    TYPE: double3
+    VALUE: (0, 0, 0)
+  ATTRIBUTE: xformOpOrder
+    TYPE: token[]
+    VALUE: [xformOp:translate, xformOp:orient, xformOp:scale]
+
+NODE: /front_hawk_left/Imu
+TYPE: Xform
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: inherited
+  ATTRIBUTE: xformOp:orient
+    TYPE: quatd
+    VALUE: (1, 0, 0, 0)
+  ATTRIBUTE: xformOp:scale
+    TYPE: double3
+    VALUE: (1, 1, 1)
+  ATTRIBUTE: xformOp:translate
+    TYPE: double3
+    VALUE: (0, 0, 0)
+  ATTRIBUTE: xformOpOrder
+    TYPE: token[]
+    VALUE: [xformOp:translate, xformOp:orient, xformOp:scale]
+
+NODE: /front_hawk_left/Imu/Imu_Sensor
+TYPE: IsaacImuSensor
+  ATTRIBUTE: angularVelocityFilterWidth
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: enabled
+    TYPE: bool
+    VALUE: True
+  ATTRIBUTE: linearAccelerationFilterWidth
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: orientationFilterWidth
+    TYPE: int
+    VALUE: 1
+  ATTRIBUTE: purpose
+    TYPE: token
+    VALUE: default
+  ATTRIBUTE: sensorPeriod
+    TYPE: float
+    VALUE: -1.0
+  ATTRIBUTE: visibility
+    TYPE: token
+    VALUE: inherited
+  ATTRIBUTE: visualize
+    TYPE: bool
+    VALUE: False
+  ATTRIBUTE: xformOp:orient
+    TYPE: quatd
+    VALUE: (0.7071067811865476, 0, 0.7071067811865475, 0)
+  ATTRIBUTE: xformOp:scale
+    TYPE: double3
+    VALUE: (1, 1, 1)
+  ATTRIBUTE: xformOp:translate
+    TYPE: double3
+    VALUE: (0, -0.0947, 0.0061)
+  ATTRIBUTE: xformOpOrder
+    TYPE: token[]
+    VALUE: [xformOp:translate, xformOp:orient, xformOp:scale]
+
+====================================================================================================
+ALL USD ATTRIBUTE CONNECTIONS
+====================================================================================================
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Red
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Red/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Red
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Red/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Red
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Red/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Dawn
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Dawn/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Dawn
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Dawn/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Dawn
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Dawn/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Cape_Cod
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Cape_Cod/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Cape_Cod
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Cape_Cod/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Cape_Cod
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Cape_Cod/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Silver_Rust
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Silver_Rust/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Silver_Rust
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Silver_Rust/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Silver_Rust
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Silver_Rust/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/White
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/White/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/White
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/White/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/White
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/White/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Tuatara
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Tuatara/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Tuatara
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Tuatara/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Tuatara
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Tuatara/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Gravel
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Gravel/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Gravel
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Gravel/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Gravel
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Gravel/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Periwinkle_Gray
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Periwinkle_Gray/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Periwinkle_Gray
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Periwinkle_Gray/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_left/Looks/Periwinkle_Gray
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_left/Looks/Periwinkle_Gray/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Red
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Red/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Red
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Red/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Red
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Red/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Dawn
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Dawn/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Dawn
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Dawn/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Dawn
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Dawn/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Cape_Cod
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Cape_Cod/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Cape_Cod
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Cape_Cod/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Cape_Cod
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Cape_Cod/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Silver_Rust
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Silver_Rust/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Silver_Rust
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Silver_Rust/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Silver_Rust
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Silver_Rust/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/White
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/White/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/White
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/White/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/White
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/White/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Tuatara
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Tuatara/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Tuatara
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Tuatara/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Tuatara
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Tuatara/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Gravel
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Gravel/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Gravel
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Gravel/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Gravel
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Gravel/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Periwinkle_Gray
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Periwinkle_Gray/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Periwinkle_Gray
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Periwinkle_Gray/Shader.outputs:out
+
+SOURCE: /World/forklift_c/body/sensors/front_hawk_right/Looks/Periwinkle_Gray
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/body/sensors/front_hawk_right/Looks/Periwinkle_Gray/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Decals
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Decals/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Decals
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Decals/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Decals
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Decals/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Glass
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Glass/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Glass
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Glass/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Glass
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Glass/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Blue
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Blue/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Blue
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Blue/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Blue
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Blue/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Yellow
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Yellow/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Yellow
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Yellow/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Yellow
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Yellow/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Red
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Red/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Red
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Red/Shader.outputs:out
+
+SOURCE: /World/forklift_c/Looks/M_Forklift_C01_Red
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /World/forklift_c/Looks/M_Forklift_C01_Red/Shader.outputs:out
+
+SOURCE: /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive
+ATTRIBUTE: inputs:context
+TYPE: uint64
+    --> /World/forklift_c/forklift_main/ros2_context.outputs:context
+
+SOURCE: /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+
+SOURCE: /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive
+ATTRIBUTE: inputs:qosProfile
+TYPE: string
+    --> /World/forklift_c/forklift_main/ros2_qos_profile.outputs:qosProfile
+
+SOURCE: /World/forklift_c/forklift_main/ackermann_controller
+ATTRIBUTE: inputs:acceleration
+TYPE: double
+    --> /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive.outputs:acceleration
+
+SOURCE: /World/forklift_c/forklift_main/ackermann_controller
+ATTRIBUTE: inputs:dt
+TYPE: double
+    --> /World/forklift_c/forklift_main/on_playback_tick.outputs:deltaSeconds
+
+SOURCE: /World/forklift_c/forklift_main/ackermann_controller
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+
+SOURCE: /World/forklift_c/forklift_main/ackermann_controller
+ATTRIBUTE: inputs:speed
+TYPE: double
+    --> /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive.outputs:speed
+
+SOURCE: /World/forklift_c/forklift_main/ackermann_controller
+ATTRIBUTE: inputs:steeringAngle
+TYPE: double
+    --> /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive.outputs:steeringAngle
+
+SOURCE: /World/forklift_c/forklift_main/ackermann_controller
+ATTRIBUTE: inputs:steeringAngleVelocity
+TYPE: double
+    --> /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive.outputs:steeringAngleVelocity
+
+SOURCE: /World/forklift_c/forklift_main/articulation_controller
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+
+SOURCE: /World/forklift_c/forklift_main/articulation_controller
+ATTRIBUTE: inputs:positionCommand
+TYPE: double[]
+    --> /World/forklift_c/forklift_main/ackermann_controller.outputs:wheelAngles
+
+SOURCE: /World/forklift_c/forklift_main/articulation_controller_01
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+
+SOURCE: /World/forklift_c/forklift_main/articulation_controller_01
+ATTRIBUTE: inputs:velocityCommand
+TYPE: double[]
+    --> /World/forklift_c/forklift_main/get_array_slice.outputs:array
+
+SOURCE: /World/forklift_c/forklift_main/get_array_slice
+ATTRIBUTE: inputs:array
+TYPE: token
+    --> /World/forklift_c/forklift_main/ackermann_controller.outputs:wheelRotationVelocity
+
+SOURCE: /World/forklift_c/forklift_main/articulation_controller_02
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+
+SOURCE: /World/forklift_c/forklift_main/articulation_controller_02
+ATTRIBUTE: inputs:positionCommand
+TYPE: double[]
+    --> /World/forklift_c/forklift_main/make_array.outputs:array
+    --> /World/forklift_c/forklift_main/ros2_subscribe_joint_state.outputs:positionCommand
+
+SOURCE: /World/forklift_c/forklift_main/ros2_subscribe_joint_state
+ATTRIBUTE: inputs:context
+TYPE: uint64
+    --> /World/forklift_c/forklift_main/ros2_context.outputs:context
+
+SOURCE: /World/forklift_c/forklift_main/ros2_subscribe_joint_state
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+
+SOURCE: /World/forklift_c/forklift_main/ros2_subscribe_joint_state
+ATTRIBUTE: inputs:qosProfile
+TYPE: string
+    --> /World/forklift_c/forklift_main/ros2_qos_profile.outputs:qosProfile
+
+SOURCE: /World/forklift_c/front_hawk_left/left_camera_render_product
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_left/isaac_run_one_simualtion_frame.outputs:step
+
+SOURCE: /World/forklift_c/front_hawk_left/right_camera_render_product
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_left/isaac_run_one_simualtion_frame.outputs:step
+
+SOURCE: /World/forklift_c/front_hawk_left/left_camera_publish_image
+ATTRIBUTE: inputs:context
+TYPE: uint64
+    --> /World/forklift_c/front_hawk_left/ros2_context.outputs:context
+
+SOURCE: /World/forklift_c/front_hawk_left/left_camera_publish_image
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_left/left_camera_render_product.outputs:execOut
+
+SOURCE: /World/forklift_c/front_hawk_left/left_camera_publish_image
+ATTRIBUTE: inputs:frameId
+TYPE: string
+    --> /World/forklift_c/front_hawk_left/left_camera_frame_id.inputs:value
+
+SOURCE: /World/forklift_c/front_hawk_left/left_camera_publish_image
+ATTRIBUTE: inputs:nodeNamespace
+TYPE: string
+    --> /World/forklift_c/front_hawk_left/camera_namespace.inputs:value
+
+SOURCE: /World/forklift_c/front_hawk_left/left_camera_publish_image
+ATTRIBUTE: inputs:qosProfile
+TYPE: string
+    --> /World/forklift_c/front_hawk_left/ros2_qos_profile.outputs:qosProfile
+
+SOURCE: /World/forklift_c/front_hawk_left/left_camera_publish_image
+ATTRIBUTE: inputs:renderProductPath
+TYPE: token
+    --> /World/forklift_c/front_hawk_left/left_camera_render_product.outputs:renderProductPath
+
+SOURCE: /World/forklift_c/front_hawk_left/right_camera_publish_image
+ATTRIBUTE: inputs:context
+TYPE: uint64
+    --> /World/forklift_c/front_hawk_left/ros2_context.outputs:context
+
+SOURCE: /World/forklift_c/front_hawk_left/right_camera_publish_image
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_left/right_camera_render_product.outputs:execOut
+
+SOURCE: /World/forklift_c/front_hawk_left/right_camera_publish_image
+ATTRIBUTE: inputs:frameId
+TYPE: string
+    --> /World/forklift_c/front_hawk_left/right_camera_frame_id.inputs:value
+
+SOURCE: /World/forklift_c/front_hawk_left/right_camera_publish_image
+ATTRIBUTE: inputs:nodeNamespace
+TYPE: string
+    --> /World/forklift_c/front_hawk_left/camera_namespace.inputs:value
+
+SOURCE: /World/forklift_c/front_hawk_left/right_camera_publish_image
+ATTRIBUTE: inputs:qosProfile
+TYPE: string
+    --> /World/forklift_c/front_hawk_left/ros2_qos_profile.outputs:qosProfile
+
+SOURCE: /World/forklift_c/front_hawk_left/right_camera_publish_image
+ATTRIBUTE: inputs:renderProductPath
+TYPE: token
+    --> /World/forklift_c/front_hawk_left/right_camera_render_product.outputs:renderProductPath
+
+SOURCE: /World/forklift_c/front_hawk_left/isaac_read_imu_node
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_left/on_playback_tick.outputs:tick
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_publish_imu
+ATTRIBUTE: inputs:angularVelocity
+TYPE: vector3d
+    --> /World/forklift_c/front_hawk_left/isaac_read_imu_node.outputs:angVel
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_publish_imu
+ATTRIBUTE: inputs:context
+TYPE: uint64
+    --> /World/forklift_c/front_hawk_left/ros2_context.outputs:context
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_publish_imu
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_left/isaac_read_imu_node.outputs:execOut
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_publish_imu
+ATTRIBUTE: inputs:linearAcceleration
+TYPE: vector3d
+    --> /World/forklift_c/front_hawk_left/isaac_read_imu_node.outputs:linAcc
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_publish_imu
+ATTRIBUTE: inputs:orientation
+TYPE: quatd
+    --> /World/forklift_c/front_hawk_left/isaac_read_imu_node.outputs:orientation
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_publish_imu
+ATTRIBUTE: inputs:qosProfile
+TYPE: string
+    --> /World/forklift_c/front_hawk_left/ros2_qos_profile.outputs:qosProfile
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_publish_imu
+ATTRIBUTE: inputs:timeStamp
+TYPE: double
+    --> /World/forklift_c/front_hawk_left/isaac_read_simulation_time.outputs:simulationTime
+
+SOURCE: /World/forklift_c/front_hawk_left/isaac_run_one_simualtion_frame
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_left/on_playback_tick.outputs:tick
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_camera_info_helper
+ATTRIBUTE: inputs:context
+TYPE: uint64
+    --> /World/forklift_c/front_hawk_left/ros2_context.outputs:context
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_camera_info_helper
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_left/left_camera_render_product.outputs:execOut
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_camera_info_helper
+ATTRIBUTE: inputs:frameId
+TYPE: string
+    --> /World/forklift_c/front_hawk_left/left_camera_frame_id.inputs:value
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_camera_info_helper
+ATTRIBUTE: inputs:frameIdRight
+TYPE: string
+    --> /World/forklift_c/front_hawk_left/right_camera_frame_id.inputs:value
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_camera_info_helper
+ATTRIBUTE: inputs:nodeNamespace
+TYPE: string
+    --> /World/forklift_c/front_hawk_left/camera_namespace.inputs:value
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_camera_info_helper
+ATTRIBUTE: inputs:qosProfile
+TYPE: string
+    --> /World/forklift_c/front_hawk_left/ros2_qos_profile.outputs:qosProfile
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_camera_info_helper
+ATTRIBUTE: inputs:renderProductPath
+TYPE: token
+    --> /World/forklift_c/front_hawk_left/left_camera_render_product.outputs:renderProductPath
+
+SOURCE: /World/forklift_c/front_hawk_left/ros2_camera_info_helper
+ATTRIBUTE: inputs:renderProductPathRight
+TYPE: token
+    --> /World/forklift_c/front_hawk_left/right_camera_render_product.outputs:renderProductPath
+
+SOURCE: /World/forklift_c/front_hawk_right/left_camera_render_product
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_right/isaac_run_one_simualtion_frame.outputs:step
+
+SOURCE: /World/forklift_c/front_hawk_right/right_camera_render_product
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_right/isaac_run_one_simualtion_frame.outputs:step
+
+SOURCE: /World/forklift_c/front_hawk_right/left_camera_publish_image
+ATTRIBUTE: inputs:context
+TYPE: uint64
+    --> /World/forklift_c/front_hawk_right/ros2_context.outputs:context
+
+SOURCE: /World/forklift_c/front_hawk_right/left_camera_publish_image
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_right/left_camera_render_product.outputs:execOut
+
+SOURCE: /World/forklift_c/front_hawk_right/left_camera_publish_image
+ATTRIBUTE: inputs:frameId
+TYPE: string
+    --> /World/forklift_c/front_hawk_right/left_camera_frame_id.inputs:value
+
+SOURCE: /World/forklift_c/front_hawk_right/left_camera_publish_image
+ATTRIBUTE: inputs:nodeNamespace
+TYPE: string
+    --> /World/forklift_c/front_hawk_right/camera_namespace.inputs:value
+
+SOURCE: /World/forklift_c/front_hawk_right/left_camera_publish_image
+ATTRIBUTE: inputs:qosProfile
+TYPE: string
+    --> /World/forklift_c/front_hawk_right/ros2_qos_profile.outputs:qosProfile
+
+SOURCE: /World/forklift_c/front_hawk_right/left_camera_publish_image
+ATTRIBUTE: inputs:renderProductPath
+TYPE: token
+    --> /World/forklift_c/front_hawk_right/left_camera_render_product.outputs:renderProductPath
+
+SOURCE: /World/forklift_c/front_hawk_right/right_camera_publish_image
+ATTRIBUTE: inputs:context
+TYPE: uint64
+    --> /World/forklift_c/front_hawk_right/ros2_context.outputs:context
+
+SOURCE: /World/forklift_c/front_hawk_right/right_camera_publish_image
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_right/right_camera_render_product.outputs:execOut
+
+SOURCE: /World/forklift_c/front_hawk_right/right_camera_publish_image
+ATTRIBUTE: inputs:frameId
+TYPE: string
+    --> /World/forklift_c/front_hawk_right/right_camera_frame_id.inputs:value
+
+SOURCE: /World/forklift_c/front_hawk_right/right_camera_publish_image
+ATTRIBUTE: inputs:nodeNamespace
+TYPE: string
+    --> /World/forklift_c/front_hawk_right/camera_namespace.inputs:value
+
+SOURCE: /World/forklift_c/front_hawk_right/right_camera_publish_image
+ATTRIBUTE: inputs:qosProfile
+TYPE: string
+    --> /World/forklift_c/front_hawk_right/ros2_qos_profile.outputs:qosProfile
+
+SOURCE: /World/forklift_c/front_hawk_right/right_camera_publish_image
+ATTRIBUTE: inputs:renderProductPath
+TYPE: token
+    --> /World/forklift_c/front_hawk_right/right_camera_render_product.outputs:renderProductPath
+
+SOURCE: /World/forklift_c/front_hawk_right/isaac_read_imu_node
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_right/on_playback_tick.outputs:tick
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_publish_imu
+ATTRIBUTE: inputs:angularVelocity
+TYPE: vector3d
+    --> /World/forklift_c/front_hawk_right/isaac_read_imu_node.outputs:angVel
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_publish_imu
+ATTRIBUTE: inputs:context
+TYPE: uint64
+    --> /World/forklift_c/front_hawk_right/ros2_context.outputs:context
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_publish_imu
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_right/isaac_read_imu_node.outputs:execOut
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_publish_imu
+ATTRIBUTE: inputs:linearAcceleration
+TYPE: vector3d
+    --> /World/forklift_c/front_hawk_right/isaac_read_imu_node.outputs:linAcc
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_publish_imu
+ATTRIBUTE: inputs:orientation
+TYPE: quatd
+    --> /World/forklift_c/front_hawk_right/isaac_read_imu_node.outputs:orientation
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_publish_imu
+ATTRIBUTE: inputs:qosProfile
+TYPE: string
+    --> /World/forklift_c/front_hawk_right/ros2_qos_profile.outputs:qosProfile
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_publish_imu
+ATTRIBUTE: inputs:timeStamp
+TYPE: double
+    --> /World/forklift_c/front_hawk_right/isaac_read_simulation_time.outputs:simulationTime
+
+SOURCE: /World/forklift_c/front_hawk_right/isaac_run_one_simualtion_frame
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_right/on_playback_tick.outputs:tick
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_camera_info_helper
+ATTRIBUTE: inputs:context
+TYPE: uint64
+    --> /World/forklift_c/front_hawk_right/ros2_context.outputs:context
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_camera_info_helper
+ATTRIBUTE: inputs:execIn
+TYPE: uint
+    --> /World/forklift_c/front_hawk_right/left_camera_render_product.outputs:execOut
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_camera_info_helper
+ATTRIBUTE: inputs:frameId
+TYPE: string
+    --> /World/forklift_c/front_hawk_right/left_camera_frame_id.inputs:value
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_camera_info_helper
+ATTRIBUTE: inputs:frameIdRight
+TYPE: string
+    --> /World/forklift_c/front_hawk_right/right_camera_frame_id.inputs:value
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_camera_info_helper
+ATTRIBUTE: inputs:nodeNamespace
+TYPE: string
+    --> /World/forklift_c/front_hawk_right/camera_namespace.inputs:value
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_camera_info_helper
+ATTRIBUTE: inputs:qosProfile
+TYPE: string
+    --> /World/forklift_c/front_hawk_right/ros2_qos_profile.outputs:qosProfile
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_camera_info_helper
+ATTRIBUTE: inputs:renderProductPath
+TYPE: token
+    --> /World/forklift_c/front_hawk_right/left_camera_render_product.outputs:renderProductPath
+
+SOURCE: /World/forklift_c/front_hawk_right/ros2_camera_info_helper
+ATTRIBUTE: inputs:renderProductPathRight
+TYPE: token
+    --> /World/forklift_c/front_hawk_right/right_camera_render_product.outputs:renderProductPath
+
+SOURCE: /FlatGrid/Looks/theGrid
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /FlatGrid/Looks/theGrid/Shader.outputs:out
+
+SOURCE: /FlatGrid/Looks/theGrid
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /FlatGrid/Looks/theGrid/Shader.outputs:out
+
+SOURCE: /FlatGrid/Looks/theGrid
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /FlatGrid/Looks/theGrid/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Red
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /front_hawk_left/Looks/Red/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Red
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /front_hawk_left/Looks/Red/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Red
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /front_hawk_left/Looks/Red/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Dawn
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /front_hawk_left/Looks/Dawn/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Dawn
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /front_hawk_left/Looks/Dawn/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Dawn
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /front_hawk_left/Looks/Dawn/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Cape_Cod
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /front_hawk_left/Looks/Cape_Cod/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Cape_Cod
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /front_hawk_left/Looks/Cape_Cod/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Cape_Cod
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /front_hawk_left/Looks/Cape_Cod/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Silver_Rust
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /front_hawk_left/Looks/Silver_Rust/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Silver_Rust
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /front_hawk_left/Looks/Silver_Rust/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Silver_Rust
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /front_hawk_left/Looks/Silver_Rust/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/White
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /front_hawk_left/Looks/White/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/White
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /front_hawk_left/Looks/White/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/White
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /front_hawk_left/Looks/White/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Tuatara
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /front_hawk_left/Looks/Tuatara/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Tuatara
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /front_hawk_left/Looks/Tuatara/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Tuatara
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /front_hawk_left/Looks/Tuatara/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Gravel
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /front_hawk_left/Looks/Gravel/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Gravel
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /front_hawk_left/Looks/Gravel/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Gravel
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /front_hawk_left/Looks/Gravel/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Periwinkle_Gray
+ATTRIBUTE: outputs:mdl:displacement
+TYPE: token
+    --> /front_hawk_left/Looks/Periwinkle_Gray/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Periwinkle_Gray
+ATTRIBUTE: outputs:mdl:surface
+TYPE: token
+    --> /front_hawk_left/Looks/Periwinkle_Gray/Shader.outputs:out
+
+SOURCE: /front_hawk_left/Looks/Periwinkle_Gray
+ATTRIBUTE: outputs:mdl:volume
+TYPE: token
+    --> /front_hawk_left/Looks/Periwinkle_Gray/Shader.outputs:out
+
+Total connected attributes: 174
+
+====================================================================================================
+ROS / ACKERMANN / CAMERA / IMU CONNECTIONS
+====================================================================================================
+
+/World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive
+  ATTRIBUTE: inputs:context
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/forklift_main/ros2_context.outputs:context
+
+/World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+
+/World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive
+  ATTRIBUTE: inputs:qosProfile
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/forklift_main/ros2_qos_profile.outputs:qosProfile
+
+/World/forklift_c/forklift_main/ackermann_controller
+  ATTRIBUTE: inputs:acceleration
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive.outputs:acceleration
+
+/World/forklift_c/forklift_main/ackermann_controller
+  ATTRIBUTE: inputs:dt
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/forklift_main/on_playback_tick.outputs:deltaSeconds
+
+/World/forklift_c/forklift_main/ackermann_controller
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+
+/World/forklift_c/forklift_main/ackermann_controller
+  ATTRIBUTE: inputs:speed
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive.outputs:speed
+
+/World/forklift_c/forklift_main/ackermann_controller
+  ATTRIBUTE: inputs:steeringAngle
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive.outputs:steeringAngle
+
+/World/forklift_c/forklift_main/ackermann_controller
+  ATTRIBUTE: inputs:steeringAngleVelocity
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive.outputs:steeringAngleVelocity
+
+/World/forklift_c/forklift_main/ros2_subscribe_joint_state
+  ATTRIBUTE: inputs:context
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/forklift_main/ros2_context.outputs:context
+
+/World/forklift_c/forklift_main/ros2_subscribe_joint_state
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/forklift_main/on_playback_tick.outputs:tick
+
+/World/forklift_c/forklift_main/ros2_subscribe_joint_state
+  ATTRIBUTE: inputs:qosProfile
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/forklift_main/ros2_qos_profile.outputs:qosProfile
+
+/World/forklift_c/front_hawk_left/left_camera_render_product
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/isaac_run_one_simualtion_frame.outputs:step
+
+/World/forklift_c/front_hawk_left/right_camera_render_product
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/isaac_run_one_simualtion_frame.outputs:step
+
+/World/forklift_c/front_hawk_left/left_camera_publish_image
+  ATTRIBUTE: inputs:context
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/ros2_context.outputs:context
+
+/World/forklift_c/front_hawk_left/left_camera_publish_image
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/left_camera_render_product.outputs:execOut
+
+/World/forklift_c/front_hawk_left/left_camera_publish_image
+  ATTRIBUTE: inputs:frameId
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/left_camera_frame_id.inputs:value
+
+/World/forklift_c/front_hawk_left/left_camera_publish_image
+  ATTRIBUTE: inputs:nodeNamespace
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/camera_namespace.inputs:value
+
+/World/forklift_c/front_hawk_left/left_camera_publish_image
+  ATTRIBUTE: inputs:qosProfile
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/ros2_qos_profile.outputs:qosProfile
+
+/World/forklift_c/front_hawk_left/left_camera_publish_image
+  ATTRIBUTE: inputs:renderProductPath
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/left_camera_render_product.outputs:renderProductPath
+
+/World/forklift_c/front_hawk_left/right_camera_publish_image
+  ATTRIBUTE: inputs:context
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/ros2_context.outputs:context
+
+/World/forklift_c/front_hawk_left/right_camera_publish_image
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/right_camera_render_product.outputs:execOut
+
+/World/forklift_c/front_hawk_left/right_camera_publish_image
+  ATTRIBUTE: inputs:frameId
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/right_camera_frame_id.inputs:value
+
+/World/forklift_c/front_hawk_left/right_camera_publish_image
+  ATTRIBUTE: inputs:nodeNamespace
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/camera_namespace.inputs:value
+
+/World/forklift_c/front_hawk_left/right_camera_publish_image
+  ATTRIBUTE: inputs:qosProfile
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/ros2_qos_profile.outputs:qosProfile
+
+/World/forklift_c/front_hawk_left/right_camera_publish_image
+  ATTRIBUTE: inputs:renderProductPath
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/right_camera_render_product.outputs:renderProductPath
+
+/World/forklift_c/front_hawk_left/isaac_read_imu_node
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/on_playback_tick.outputs:tick
+
+/World/forklift_c/front_hawk_left/ros2_publish_imu
+  ATTRIBUTE: inputs:angularVelocity
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/isaac_read_imu_node.outputs:angVel
+
+/World/forklift_c/front_hawk_left/ros2_publish_imu
+  ATTRIBUTE: inputs:context
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/ros2_context.outputs:context
+
+/World/forklift_c/front_hawk_left/ros2_publish_imu
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/isaac_read_imu_node.outputs:execOut
+
+/World/forklift_c/front_hawk_left/ros2_publish_imu
+  ATTRIBUTE: inputs:linearAcceleration
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/isaac_read_imu_node.outputs:linAcc
+
+/World/forklift_c/front_hawk_left/ros2_publish_imu
+  ATTRIBUTE: inputs:orientation
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/isaac_read_imu_node.outputs:orientation
+
+/World/forklift_c/front_hawk_left/ros2_publish_imu
+  ATTRIBUTE: inputs:qosProfile
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/ros2_qos_profile.outputs:qosProfile
+
+/World/forklift_c/front_hawk_left/ros2_publish_imu
+  ATTRIBUTE: inputs:timeStamp
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/isaac_read_simulation_time.outputs:simulationTime
+
+/World/forklift_c/front_hawk_left/isaac_run_one_simualtion_frame
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/on_playback_tick.outputs:tick
+
+/World/forklift_c/front_hawk_left/ros2_camera_info_helper
+  ATTRIBUTE: inputs:context
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/ros2_context.outputs:context
+
+/World/forklift_c/front_hawk_left/ros2_camera_info_helper
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/left_camera_render_product.outputs:execOut
+
+/World/forklift_c/front_hawk_left/ros2_camera_info_helper
+  ATTRIBUTE: inputs:frameId
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/left_camera_frame_id.inputs:value
+
+/World/forklift_c/front_hawk_left/ros2_camera_info_helper
+  ATTRIBUTE: inputs:frameIdRight
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/right_camera_frame_id.inputs:value
+
+/World/forklift_c/front_hawk_left/ros2_camera_info_helper
+  ATTRIBUTE: inputs:nodeNamespace
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/camera_namespace.inputs:value
+
+/World/forklift_c/front_hawk_left/ros2_camera_info_helper
+  ATTRIBUTE: inputs:qosProfile
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/ros2_qos_profile.outputs:qosProfile
+
+/World/forklift_c/front_hawk_left/ros2_camera_info_helper
+  ATTRIBUTE: inputs:renderProductPath
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/left_camera_render_product.outputs:renderProductPath
+
+/World/forklift_c/front_hawk_left/ros2_camera_info_helper
+  ATTRIBUTE: inputs:renderProductPathRight
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_left/right_camera_render_product.outputs:renderProductPath
+
+/World/forklift_c/front_hawk_right/left_camera_render_product
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/isaac_run_one_simualtion_frame.outputs:step
+
+/World/forklift_c/front_hawk_right/right_camera_render_product
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/isaac_run_one_simualtion_frame.outputs:step
+
+/World/forklift_c/front_hawk_right/left_camera_publish_image
+  ATTRIBUTE: inputs:context
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/ros2_context.outputs:context
+
+/World/forklift_c/front_hawk_right/left_camera_publish_image
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/left_camera_render_product.outputs:execOut
+
+/World/forklift_c/front_hawk_right/left_camera_publish_image
+  ATTRIBUTE: inputs:frameId
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/left_camera_frame_id.inputs:value
+
+/World/forklift_c/front_hawk_right/left_camera_publish_image
+  ATTRIBUTE: inputs:nodeNamespace
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/camera_namespace.inputs:value
+
+/World/forklift_c/front_hawk_right/left_camera_publish_image
+  ATTRIBUTE: inputs:qosProfile
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/ros2_qos_profile.outputs:qosProfile
+
+/World/forklift_c/front_hawk_right/left_camera_publish_image
+  ATTRIBUTE: inputs:renderProductPath
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/left_camera_render_product.outputs:renderProductPath
+
+/World/forklift_c/front_hawk_right/right_camera_publish_image
+  ATTRIBUTE: inputs:context
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/ros2_context.outputs:context
+
+/World/forklift_c/front_hawk_right/right_camera_publish_image
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/right_camera_render_product.outputs:execOut
+
+/World/forklift_c/front_hawk_right/right_camera_publish_image
+  ATTRIBUTE: inputs:frameId
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/right_camera_frame_id.inputs:value
+
+/World/forklift_c/front_hawk_right/right_camera_publish_image
+  ATTRIBUTE: inputs:nodeNamespace
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/camera_namespace.inputs:value
+
+/World/forklift_c/front_hawk_right/right_camera_publish_image
+  ATTRIBUTE: inputs:qosProfile
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/ros2_qos_profile.outputs:qosProfile
+
+/World/forklift_c/front_hawk_right/right_camera_publish_image
+  ATTRIBUTE: inputs:renderProductPath
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/right_camera_render_product.outputs:renderProductPath
+
+/World/forklift_c/front_hawk_right/isaac_read_imu_node
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/on_playback_tick.outputs:tick
+
+/World/forklift_c/front_hawk_right/ros2_publish_imu
+  ATTRIBUTE: inputs:angularVelocity
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/isaac_read_imu_node.outputs:angVel
+
+/World/forklift_c/front_hawk_right/ros2_publish_imu
+  ATTRIBUTE: inputs:context
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/ros2_context.outputs:context
+
+/World/forklift_c/front_hawk_right/ros2_publish_imu
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/isaac_read_imu_node.outputs:execOut
+
+/World/forklift_c/front_hawk_right/ros2_publish_imu
+  ATTRIBUTE: inputs:linearAcceleration
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/isaac_read_imu_node.outputs:linAcc
+
+/World/forklift_c/front_hawk_right/ros2_publish_imu
+  ATTRIBUTE: inputs:orientation
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/isaac_read_imu_node.outputs:orientation
+
+/World/forklift_c/front_hawk_right/ros2_publish_imu
+  ATTRIBUTE: inputs:qosProfile
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/ros2_qos_profile.outputs:qosProfile
+
+/World/forklift_c/front_hawk_right/ros2_publish_imu
+  ATTRIBUTE: inputs:timeStamp
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/isaac_read_simulation_time.outputs:simulationTime
+
+/World/forklift_c/front_hawk_right/isaac_run_one_simualtion_frame
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/on_playback_tick.outputs:tick
+
+/World/forklift_c/front_hawk_right/ros2_camera_info_helper
+  ATTRIBUTE: inputs:context
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/ros2_context.outputs:context
+
+/World/forklift_c/front_hawk_right/ros2_camera_info_helper
+  ATTRIBUTE: inputs:execIn
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/left_camera_render_product.outputs:execOut
+
+/World/forklift_c/front_hawk_right/ros2_camera_info_helper
+  ATTRIBUTE: inputs:frameId
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/left_camera_frame_id.inputs:value
+
+/World/forklift_c/front_hawk_right/ros2_camera_info_helper
+  ATTRIBUTE: inputs:frameIdRight
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/right_camera_frame_id.inputs:value
+
+/World/forklift_c/front_hawk_right/ros2_camera_info_helper
+  ATTRIBUTE: inputs:nodeNamespace
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/camera_namespace.inputs:value
+
+/World/forklift_c/front_hawk_right/ros2_camera_info_helper
+  ATTRIBUTE: inputs:qosProfile
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/ros2_qos_profile.outputs:qosProfile
+
+/World/forklift_c/front_hawk_right/ros2_camera_info_helper
+  ATTRIBUTE: inputs:renderProductPath
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/left_camera_render_product.outputs:renderProductPath
+
+/World/forklift_c/front_hawk_right/ros2_camera_info_helper
+  ATTRIBUTE: inputs:renderProductPathRight
+  VALUE: None
+  CONNECTIONS:
+    --> /World/forklift_c/front_hawk_right/right_camera_render_product.outputs:renderProductPath
+
+====================================================================================================
+ROS TOPIC / MESSAGE STRING SEARCH
+====================================================================================================
+
+PRIM: /World/forklift_c/forklift_main/ros2_context
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2Context
+
+PRIM: /World/forklift_c/forklift_main/ros2_qos_profile
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2QoSProfile
+
+PRIM: /World/forklift_c/forklift_main/ros2_subscribe_ackermanndrive
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2SubscribeAckermannDrive
+
+PRIM: /World/forklift_c/forklift_main/ros2_subscribe_joint_state
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2SubscribeJointState
+
+PRIM: /World/forklift_c/front_hawk_left/ros2_context
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2Context
+
+PRIM: /World/forklift_c/front_hawk_left/left_camera_publish_image
+ATTRIBUTE: inputs:topicName
+TYPE: string
+VALUE: left/image_raw
+
+PRIM: /World/forklift_c/front_hawk_left/left_camera_publish_image
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2CameraHelper
+
+PRIM: /World/forklift_c/front_hawk_left/right_camera_publish_image
+ATTRIBUTE: inputs:topicName
+TYPE: string
+VALUE: right/image_raw
+
+PRIM: /World/forklift_c/front_hawk_left/right_camera_publish_image
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2CameraHelper
+
+PRIM: /World/forklift_c/front_hawk_left/ros2_publish_imu
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2PublishImu
+
+PRIM: /World/forklift_c/front_hawk_left/ros2_camera_info_helper
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2CameraInfoHelper
+
+PRIM: /World/forklift_c/front_hawk_left/ros2_qos_profile
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2QoSProfile
+
+PRIM: /World/forklift_c/front_hawk_right/ros2_context
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2Context
+
+PRIM: /World/forklift_c/front_hawk_right/left_camera_publish_image
+ATTRIBUTE: inputs:topicName
+TYPE: string
+VALUE: left/image_raw
+
+PRIM: /World/forklift_c/front_hawk_right/left_camera_publish_image
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2CameraHelper
+
+PRIM: /World/forklift_c/front_hawk_right/right_camera_publish_image
+ATTRIBUTE: inputs:topicName
+TYPE: string
+VALUE: right/image_raw
+
+PRIM: /World/forklift_c/front_hawk_right/right_camera_publish_image
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2CameraHelper
+
+PRIM: /World/forklift_c/front_hawk_right/ros2_publish_imu
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2PublishImu
+
+PRIM: /World/forklift_c/front_hawk_right/ros2_camera_info_helper
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2CameraInfoHelper
+
+PRIM: /World/forklift_c/front_hawk_right/ros2_qos_profile
+ATTRIBUTE: node:type
+TYPE: token
+VALUE: isaacsim.ros2.bridge.ROS2QoSProfile
+
+PRIM: /Render/OmniverseKit/HydraTextures/omni_kit_widget_viewport_ViewportTexture_0
+ATTRIBUTE: omni:rtx:lights:dome:samplingStrategy
+TYPE: token
+VALUE: imageBasedLighting
+
+PRIM: /Render/OmniverseKit/HydraTextures/omni_kit_widget_viewport_ViewportTexture_0
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_color_image
+TYPE: string[]
+VALUE: [emission_color_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/omni_kit_widget_viewport_ViewportTexture_0
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_intensity_image
+TYPE: string[]
+VALUE: [emission_intensity_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator
+ATTRIBUTE: omni:rtx:lights:dome:samplingStrategy
+TYPE: token
+VALUE: imageBasedLighting
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_color_image
+TYPE: string[]
+VALUE: [emission_color_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_intensity_image
+TYPE: string[]
+VALUE: [emission_intensity_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_01
+ATTRIBUTE: omni:rtx:lights:dome:samplingStrategy
+TYPE: token
+VALUE: imageBasedLighting
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_01
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_color_image
+TYPE: string[]
+VALUE: [emission_color_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_01
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_intensity_image
+TYPE: string[]
+VALUE: [emission_intensity_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_02
+ATTRIBUTE: omni:rtx:lights:dome:samplingStrategy
+TYPE: token
+VALUE: imageBasedLighting
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_02
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_color_image
+TYPE: string[]
+VALUE: [emission_color_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_02
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_intensity_image
+TYPE: string[]
+VALUE: [emission_intensity_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_03
+ATTRIBUTE: omni:rtx:lights:dome:samplingStrategy
+TYPE: token
+VALUE: imageBasedLighting
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_03
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_color_image
+TYPE: string[]
+VALUE: [emission_color_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_03
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_intensity_image
+TYPE: string[]
+VALUE: [emission_intensity_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_04
+ATTRIBUTE: omni:rtx:lights:dome:samplingStrategy
+TYPE: token
+VALUE: imageBasedLighting
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_04
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_color_image
+TYPE: string[]
+VALUE: [emission_color_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_04
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_intensity_image
+TYPE: string[]
+VALUE: [emission_intensity_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_05
+ATTRIBUTE: omni:rtx:lights:dome:samplingStrategy
+TYPE: token
+VALUE: imageBasedLighting
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_05
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_color_image
+TYPE: string[]
+VALUE: [emission_color_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_05
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_intensity_image
+TYPE: string[]
+VALUE: [emission_intensity_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_06
+ATTRIBUTE: omni:rtx:lights:dome:samplingStrategy
+TYPE: token
+VALUE: imageBasedLighting
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_06
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_color_image
+TYPE: string[]
+VALUE: [emission_color_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_06
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_intensity_image
+TYPE: string[]
+VALUE: [emission_intensity_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_07
+ATTRIBUTE: omni:rtx:lights:dome:samplingStrategy
+TYPE: token
+VALUE: imageBasedLighting
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_07
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_color_image
+TYPE: string[]
+VALUE: [emission_color_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_07
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_intensity_image
+TYPE: string[]
+VALUE: [emission_intensity_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_08
+ATTRIBUTE: omni:rtx:lights:dome:samplingStrategy
+TYPE: token
+VALUE: imageBasedLighting
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_08
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_color_image
+TYPE: string[]
+VALUE: [emission_color_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_08
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_intensity_image
+TYPE: string[]
+VALUE: [emission_intensity_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_09
+ATTRIBUTE: omni:rtx:lights:dome:samplingStrategy
+TYPE: token
+VALUE: imageBasedLighting
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_09
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_color_image
+TYPE: string[]
+VALUE: [emission_color_image]
+
+PRIM: /Render/OmniverseKit/HydraTextures/Replicator_09
+ATTRIBUTE: omni:rtx:material:db:flattener:emission_intensity_image
+TYPE: string[]
+VALUE: [emission_intensity_image]
+
+====================================================================================================
+END OF INSPECTION
+====================================================================================================
